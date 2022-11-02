@@ -1,0 +1,170 @@
+body{
+	background: url(photos/awesome2.jpg)center/cover no-repeat fixed;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	background: linear-gradient(120deg,red,purple,midnightblue,floralwhite,pink);
+	height: 50px;
+	
+}
+nav a{
+	text-decoration: none;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px black;
+	color: cyan;
+	margin-top: 15px;
+}
+h2{
+	margin-left: 0px;
+	color: red;
+}
+.h1{
+	float: right;
+	background: url(photos/join.jpg)center/cover no-repeat fixed;
+	width: 250px;
+	height: 250px;
+	text-align: center;
+	border-radius: 50%;
+	opacity: 0.5;
+	animation: head 5s infinite;
+	transition: all 3s linear; 
+}
+h1{
+	padding-top: 20px;
+	padding-left:-45px;
+	color: blue;
+	font-size: 60px;
+	transition-property: transform;
+	transform: rotateZ(-30deg);
+	margin-left: -20px;
+}
+.h2{
+	transform: none;
+	color: cyan;
+	font-size: 28px;
+	text-align: center;
+	animation:two 5s infinite;
+	transition: all 4s linear;
+}
+.p{
+	font-size: 18px;
+	font-family: centuary;
+	color: blue;
+	text-align: center;
+	/*transition-property: transform;
+	transform: rotateZ(-30deg);*/
+	margin-top: 750px;
+	font-family: algerian;
+}
+span{
+	font-size: 30px;
+	color: dodgerblue;
+}
+.three{
+	margin-left: 1000px;
+	margin-top: -300px;
+}
+.two{
+	margin-top: 400px;
+}
+.one{
+	animation: one 5s 1;
+	transition: all 3s linear;
+	margin-top: -700px;
+	/*opacity: 0.5px;*/
+}
+.footer{
+	background: linear-gradient(120deg,cyan,purple,blue,dodgerblue,midnightblue);
+	opacity: 0.8;
+	margin-bottom: 0px;
+	text-align:  center;
+}
+@keyframes head{
+	0%{
+		transform: rotateY(180deg);
+	}
+}
+@keyframes one{
+	0%{
+		margin-top: 0px;
+	}
+	100%{
+		margin-top: -700px;
+	}
+}
+@keyframes two{
+	0%{
+		color: cyan;
+	}
+	25%{
+		color: red;
+	}
+	50%{
+		color: midnightblue;
+	}
+	75%{
+		color: green;
+	}
+	100%{
+		color: purple;
+	}
+}
+@media screen and (max-width: 745px){
+	h2{
+		display: none;
+	}
+	.h1{
+	float: right;
+	background: url(photos/join.jpg)center/cover no-repeat fixed;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	border-radius: 50%;
+	opacity: 0.5;
+	animation: head 5s infinite;
+	transition: all 3s linear; 
+}
+h1{
+	padding-top: 20px;
+	padding-left:-45px;
+	color: red;
+	font-size: 24px;
+	transition-property: transform;
+	transform: rotateZ(-30deg);
+	margin-left: -20px;
+}
+	
+.p{
+	font-size: 12px;
+	font-family: centuary;
+	color: blue;
+	text-align: center;
+	/*transition-property: transform;
+	transform: rotateZ(-30deg);*/
+	margin-top: 200px;
+	font-family: algerian;
+}
+img{
+	width: 100px;
+	height: 100px;
+}
+span{
+	font-size: 10px;
+	color: dodgerblue;
+}
+.three{
+	margin-left: 80%;
+	margin-top: -50px;
+}
+.two{
+	margin-top: 200px;
+}
+.one{
+	animation: one 5s 1;
+	transition: all 3s linear;
+	margin-top: -300px;
+	/*opacity: 0.5px;*/
+}
+
+}

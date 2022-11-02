@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KD2XHC5');</script>
+<meta name="msvalidate.01" content="6D8A13ACD148F854DBD232CBCD9A0D6B" />
+<meta name="google-site-verification" content="VpOgShHvpH1UwgX8bI7PL3gpGZbyqxM3g8p0vQ9KQ8k" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119006916-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-119006916-1');
+</script>
+<script async type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c416812058f100011a5a913&product=inline-share-buttons"></script>
+<title>how to display video from MySQL database in PHP | Learn MySQL</title>
+<base href="https://www.codingtag.com/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="index, follow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Are you confused that how to show the video from MySQL database at your website php page. Coding Tag have solution how to retrieve video from MySQL Database with simple and easy code." />
+<meta name="keywords" content=" how to display video from mysql database in php, retrieve video from database, video display in php website, play video from mysql database, download video from mysql, mysql learning, download database " />
+<meta name="geo.region" content="US-VA" />
+<meta name="geo.placename" content="Ashburn" />
+<meta name="geo.position" content="39.043719;-77.48749" />
+<meta name="ICBM" content="39.043719, -77.48749" />
+<meta name="geo.region" content="GB" />
+<meta name="geo.placename" content="Hemel Hempstead" />
+<meta name="geo.position" content="51.751178;-0.472528" />
+<meta name="ICBM" content="51.751178, -0.472528" />
+<meta name="geo.region" content="CA" />
+<meta name="geo.position" content="61.066692;-107.991707" />
+<meta name="ICBM" content="61.066692, -107.991707" />
+<meta name="geo.region" content="ID" />
+<meta name="geo.position" content="-6.175394;106.827183" />
+<meta name="ICBM" content="-6.175394, 106.827183" />
+<meta name="geo.region" content="DE" />
+<meta name="geo.placename" content="Frankfurt" />
+<meta name="geo.position" content="50.1034;8.702334" />
+<meta name="ICBM" content="50.1034, 8.702334" />
+<link rel="canonical" href="https://www.codingtag.com/how-to-display-video-from-mysql-database-in-php" />
+<meta property="og:image" content="https://www.codingtag.com/uploads/1549040357.png">
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:title" content="how to display video from MySQL database in PHP | Learn MySQL">
+<meta property="og:url" content="https://www.codingtag.com/how-to-display-video-from-mysql-database-in-php">
+<meta property="article:publisher" content="https://www.facebook.com/codingtag" />
+<meta property="article:author" content="https://www.facebook.com/codingtag" />
+<meta property="article:published_time" content="05-Jun-18" />
+<meta property="article:modified_time" content="05-Jun-18" /><script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.codingtag.com/how-to-display-video-from-mysql-database-in-php"
+  },
+  "headline": "How to display video from MySQL database in PHP",
+  "description": "Are you confused that how to show the video from MySQL database at your website php page. Coding Tag have solution how to retrieve video from MySQL Database with simple and easy code.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.codingtag.com/uploads/1549040357.png",
+    "width": "914",
+    "height": "508"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Yogesh Khanna"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Coding Tag",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.codingtag.com/img/code-1.png",
+      "width": "293",
+      "height": "60"
+    }
+  },
+  "datePublished": "2018-06-05",
+  "dateModified": "2018-06-05"
+}
+</script><meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,700,600,500,800,900,100' media="all">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="codingtag-dashboard/css/emoji.min.css">
+<link rel="apple-touch-icon-precomposed" href="img/coding-tag-favicon.png">
+<link rel="shortcut icon" type="image/png" href="img/coding-tag-favicon.png"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.0/js.cookie.js"></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD2XHC5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <div class="header-top-area">
+            <div class="container">
+                <div class="row">
+                   <div class="col-sm-6">
+                        <div class="header-left-menu">
+                            <ul>
+                                <li><a href="https://www.codingtag.com/">Home</a></li>
+                                <li><a href="about">About</a></li>
+                               <li><a href="contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                 <div class="col-sm-6">
+                 <div class="social-icon">
+                    <a target="_blank" href="https://www.facebook.com/codingtag/" rel="nofollow"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://twitter.com/Codingtag" rel="nofollow"><i class="fa fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/codingtag/" rel="nofollow"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCgdQyLCJVf4L7XZd7nZRjzQ" rel="nofollow"><i class="fa fa-youtube-play"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/coding-tag-6954a8166/" rel="nofollow"><i class="fa fa-linkedin"></i></a>
+                </div>
+               <form action="https://www.codingtag.com/" class="search-form" method="post" role="search">
+                            <input type="search" title="Search for:" name="search" value="" placeholder="Search ..." class="search-field">
+                            <input type="submit" name="get_search" value="Search" class="search-submit">
+                       </form>   
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                    <div class="logo">
+                        <div class="img-logo">
+                           <a href="https://www.codingtag.com/" class="custom-logo-link" rel="home">
+                             <img src="img/code-1.png" class="img-responsive img-320" alt="Coding Tag" ></a> 
+                        </div>
+                    <div class="navbar-header mb-new-view">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>                             
+                </div>
+            </div>
+        <div class="col-md-9 pull-rt-mg mb-mc">
+<a href="https://www.bluehost.com/track/codingtag/" target="_blank" rel="nofollow">
+<img border="0" src="https://bluehost-cdn.com/media/partner/images/codingtag/728x90/728x90BW.png"></a>
+   </div>
+            </div>
+            </div>
+        </div>
+        <div class="top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="navbar-collapse collapse pd-zero"> 
+                            <ul class="nav navbar-nav pl-nx">
+        <li class="dropdown"><a>Web Tutorials <span class="caret"></span></a> <ul class="dropdown-menu dropdown-menu-h"><li><a href="/html">HTML</a></li><li><a href="/abbr-tag-in-html">HTML Tags</a></li><li><a href="/css-introduction">CSS</a></li><li><a href="/bootstrap">Bootstrap</a></li><li><a href="/ajax-tutorial">Ajax</a></li><li><a href="/php-introduction">PHP</a></li><li><a href="/how-to-start-a-successful-blog-website">WordPress</a></li></ul>
+                                </li><li class="dropdown"><a>Programming Tutorials <span class="caret"></span></a> <ul class="dropdown-menu dropdown-menu-h"><li><a href="/structure-in-c">Learn C Language</a></li><li><a href="/overview-c-plus-plus">Learn C++ Language</a></li><li><a href="/why-beginners-should-learn-python-language">Learn Python Language</a></li><li><a href="/javascript-introduction">Learn JavaScript</a></li><li><a href="/nodejs-tutorials-for-beginners">Learn Node.js</a></li></ul>
+                                </li><li class="dropdown"><a>Examples / Codes <span class="caret"></span></a> <ul class="dropdown-menu dropdown-menu-h"><li><a href="/php-signup-script">PHP Examples</a></li><li><a href="/top-programming-languages-in-2019">Others</a></li></ul>
+                                </li><li><a href="/seo---a-guide-to-beginners">Digital Marketing</a></li><li><a href="/html-interview-questions">Tech Interviews QA</a></li><li class="dropdown"><a>Latest Tech <span class="caret"></span></a> <ul class="dropdown-menu dropdown-menu-h"><li><a href="/what-is-cloud-computing">Cloud Computing</a></li></ul>
+                                </li>				<li class="dropdown"><a>Free PDF<span class="caret"></span></a>
+				<ul class="dropdown-menu dropdown-menu-h">
+				    <li><a href="free-download-technical-interviews-pdf">Technical Interviews</a></li>				</ul>
+				</li>
+                  </ul> 
+                </div>                        
+               </div>
+              </div>
+           </div>
+       </div>
+</header>
+<div class="clearfix"></div>
+<link href="rainbow-master/themes/css/blackboard.css" rel="stylesheet" type="text/css" media="screen"><link href="rainbow-master/themes/css/blackboard.css" rel="stylesheet" type="text/css" media="screen">
+<section class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+             <div>
+             </div>
+             
+             <input id="bpopup_name_" value="how-to-display-video-from-mysql-database-in-php" style="display:none;">
+                    <article class="post">
+                        <header class="entry-header">
+                            <h1 class="entry-title">How to display video from MySQL database in PHP</h1>
+                            <div class="col-xs-9 mb-text pd-zero">
+                                <p class="posted-by"> by
+                                    <a href="https://www.linkedin.com/in/ontimeinfotech/" target="_blank", rel="nofollow">Yogesh Khanna<i class="fa fa-linkedin link-org"></i></a><i class="fa fa-clock-o"></i>
+                                        05-Jun-18                                </p>
+                            </div>
+                            <div class="col-xs-3 mb-text pd-zero">
+                               <p class="pull-right">
+                                <i class="fa fa-comments"></i>
+                                0                                    <i class="fa fa-eye"></i>
+                                    9615                                        </p>
+                            </div>
+                        </header>
+                        <div class="entry-summary">
+                            <br>
+                            <p><p><b>Are you confused about how to retrieve the video from the database on your website front end page?</b></p><p>So here's the solution given. To get the video from the database, you require the exact path of the video folder where you have saved the particular video during uploading time.</p><p>The entire code of the retrieving video is identical with retrieving images from the database except the path of the video which was illustrated below in detail:</p><hr><p>A <b>global function</b> is used to get the value of that variable which is used all over website pages. The global function is integrated into the functions file.<span style="font-size: 1rem; font-weight: initial;"></span></p><p><span style="font-size: 1rem; font-weight: initial;"></span></p><pre>&lt;?php<br>global $video_path;<br>$video_path ='video_folder/';<br><br>$query = "SELECT * FROM videos WHERE id=1";<br>$sql=mysqli_query($GLOBALS['db'],$query);<br>$row=mysqli_fetch_array($sql);<br>?&gt;<br><br>&lt;video width="100%" controls&gt;<br>&lt;source src="&lt;?php echo $GLOBALS['video_path'].$row['product_video'];?&gt;"&gt;<br>&lt;/video&gt;<br> <br>&lt;!-- Here "controls" is used to get control on video (Start, Stop, Download etc.) --&gt;</pre><p></p><hr><p></p><p><span style="font-size: 1rem;"><b style="background-color: rgb(255, 255, 0);">Recommendation</b>:&nbsp;</span><span style="font-size: 1rem;">I would personally suggest you get this book now to enhance your PHP knowledge</span><br></p><p></p><iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=IN&amp;source=ac&amp;ref=qf_sp_asin_til&amp;ad_type=product_link&amp;tracking_id=codingtag07-21&amp;marketplace=amazon&amp;region=IN&amp;placement=0070223629&amp;asins=0070223629&amp;linkId=116a83ed9d1098563f47f225d131f06f&amp;show_border=false&amp;link_opens_in_new_window=true&amp;price_color=333333&amp;title_color=0066c0&amp;bg_color=ffffff"></iframe><p></p><hr><p><b>Related articles:</b></p><p>1. <a href="https://www.codingtag.com/how-to-retrieve-images-from-mysql-database" target="_blank">How to retrieve images from MySQL database</a></p><p>2. <a href="https://www.codingtag.com/update-data-in-mysql-without-change-of-exists-file" target="_blank">Update data in MySQL without change the exists file</a></p><p></p></p>
+    <br>
+                                     </div>
+                        <div class="post-content-bottom">
+                            <p class="post-share">Share:
+                                                                    <div class="col-sm-9 col-xs-9 padding-left-right-0">
+                                        <div class="sharethis-inline-share-buttons"></div>
+                                    </div>
+                                    <div class="post-tags-single">
+                                        <a class="mb-prev" href="/how-to-retrieve-images-from-mysql-database">Prev</a> <a class="mb-next" href="/php-get-current-time-stamp">Next</a>          </div>
+          </div>
+         </article>
+         <div class="clearfix"></div>
+            <div class="related-posts">
+                <h4>You May Also Like</h4>
+                <div class="related-post-list">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="/some-common-mistakes-for-php-developers-to-avoid">
+                        <img class="img-responsive" src="uploads/1558493720.png" alt="">
+                        <h2>Some Common Mistakes for PHP Developers to Avoid</h2>
+                        </a>
+                        </div>
+                                                <div class="col-sm-3 col-xs-6">
+                        <a href="/how-to-check-whether-a-variable-is-numeric-or-not-in-php">
+                        <img class="img-responsive" src="uploads/1564904412.png" alt="">
+                        <h2>How to check whether a variable is numeric or not in php</h2>
+                        </a>
+                        </div>
+                                                <div class="col-sm-3 col-xs-6">
+                        <a href="/arithmatic-calculator-in-php">
+                        <img class="img-responsive" src="uploads/1549118934.png" alt="">
+                        <h2>Arithmatic Calculator in PHP</h2>
+                        </a>
+                        </div>
+                                                <div class="col-sm-3 col-xs-6">
+                        <a href="/how-to-count-the-length-of-string-in-php">
+                        <img class="img-responsive" src="uploads/1564903471.png" alt="">
+                        <h2>How to count the length of string in PHP</h2>
+                        </a>
+                        </div>
+                                            </div>
+            </div>
+                    </div>
+                    <div class="clearfix"></div>
+                                         <br/>
+                    <div class="clearfix"></div>
+                    <div class="comments-area">
+                        <div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title"><i class="fa fa-comment"></i> Leave a Reply</h3>
+<span id="comments" >
+            <form action="" method="post" class="comment-form" novalidate="">
+                <div class="row">
+                        <div class="col-md-6">
+                            <p class="comment-form-author">
+                            <input name="blog_id" type="hidden" value="338" required>
+                                <input placeholder="Name" id="name" name="name" type="text" value="" size="30" aria-required="true" onpaste="return false;" autocomplete="off" pattern="[a-zA-Z ]{2,}" required>
+                        </p>
+                        </div>
+                            <div class="col-md-6">
+                            <p class="comment-form-email">
+                            <input placeholder="Email" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" name="email" type="email" value="" size="30" aria-required="true" onpaste="return false;" autocomplete="off" required>
+                        </p>
+                    </div>
+                    </div>
+                    <p class="comment-form-comment">
+                  <textarea placeholder="Comment" id="comment" name="comment" cols="45" rows="8" aria-required="true" onkeyup="countChar(this)" oninput="this.value = this.value.replace(/[<>/:]/g, '')" onpaste="return false;" maxlength="500" pattern="[a-zA-Z ]{2,}" required></textarea><span id="charNum" style="color:red;"></span>
+                      </p>
+                                <p class="form-submit">
+                                    <input name="post_comment" type="button" id="submit" class="submit comment-btn-all" value="Post Comment" onclick="update_comment(338);">
+                                </p>
+                            </form>
+                            </span>
+                        </div>
+                        <br/>
+                        <div class="comment-area">
+                            <h5><i class="fa fa-comments"></i> Comments</h5>
+                            <ol class="comment-list">
+                                Waiting for your comments                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+<div class="right-sidebar">
+     <div class="widget">
+        <h5 class="widget-title">World's Fastest VPN Services</h5>
+  <div class="ad-img">
+      <a href="https://billing.purevpn.com/aff.php?aff=41106" target="_blank" class="custom-logo-link" rel="nofollow">
+       <img src="uploads/157115850213842725.json.png" class="img-responsive" alt="World's Fastest VPN Services"></a>
+      </div>
+        </div><br>
+           
+    
+<div class="clearfix"></div>
+ <div class="widget">
+     <!--
+ <div>
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2433850953168520"
+    data-ad-slot="3619528699"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+-->
+</div>
+<div class="widget">
+<br>
+<h2 class="widget-title">PHP Examples</h2>
+  <div class="ad-img">
+  <div class="list-group sideactive" id="inneractive">
+<div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/php-signup-script" class="list-group-item list-group-item-1 " > PHP Signup Script</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/php-login-script" class="list-group-item list-group-item-1 " > PHP Login Script</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/php-forget-password-script" class="list-group-item list-group-item-1 " > PHP Forget Password Script</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/php-comments" class="list-group-item list-group-item-1 " > PHP Comment Tag</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/update-data-in-mysql-without-change-of-exists-file" class="list-group-item list-group-item-1 " > Update data in MySQL without change the exists file</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-retrieve-images-from-mysql-database" class="list-group-item list-group-item-1 " > How to retrieve images from MySQL database</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-display-video-from-mysql-database-in-php" class="list-group-item list-group-item-1 active" > How to retrieve video from MySQL database</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/php-get-current-time-stamp" class="list-group-item list-group-item-1 " > PHP Get Current Time Stamp</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/arithmatic-calculator-in-php" class="list-group-item list-group-item-1 " > Arithmetic Calculator</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/change-background-color-in-php" class="list-group-item list-group-item-1 " > Change Background Color</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/php-multiple-selection" class="list-group-item list-group-item-1 " > Multiple Dropdown Selection</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/delete-multiple-records" class="list-group-item list-group-item-1 " > Delete Multiple Records</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/enquiry-form-with-email-function" class="list-group-item list-group-item-1 " > Enquiry Form with Email Function</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/pagination" class="list-group-item list-group-item-1 " > Pagination</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-create-random-password-in-php" class="list-group-item list-group-item-1 " > Create Random Password</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/numeric-validation-in-php" class="list-group-item list-group-item-1 " > Numeric Validation</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/html-tags-print-with-php-echo-statement" class="list-group-item list-group-item-1 " > HTML Tags Print with PHP Echo Statement</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/htaccess-deny-direct-access-to-folder-in-website" class="list-group-item list-group-item-1 " > htaccess deny direct access to folder in website</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/htaccess-remove-index-php-from-url" class="list-group-item list-group-item-1 " > htaccess remove index.php from url</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-remove-php-extension-with-htaccess" class="list-group-item list-group-item-1 " > How remove .php extension with .htaccess</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-can-i-redirect-urls-with-htaccess" class="list-group-item list-group-item-1 " > How can i redirect URLs with htaccess</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/export-mysql-data-to-excel-in-php" class="list-group-item list-group-item-1 " > Export MySQL data to Excel in PHP</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/session_start-cannot-send-session-cache-limiter-headers-already-sent" class="list-group-item list-group-item-1 " > session_start(): cannot send session cache limiter - headers already sent</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-check-php-version" class="list-group-item list-group-item-1 " > How to check PHP Version</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-get-time-from-mysql-database-in-php" class="list-group-item list-group-item-1 " > how to get time from MySQL database in PHP</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-get-data-one-year-before-from-database-in-mysql" class="list-group-item list-group-item-1 " > How to get data one year before from database in mysql?</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-get-data-one-year-before-till-now-from-database-in-mysql" class="list-group-item list-group-item-1 " > How to get data one year before till now from database in mysql?</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/fatal-error-allowed-memory-size-exhausted" class="list-group-item list-group-item-1 " > Fatal Error Allowed Memory Size Exhausted</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-blocked-login-for-few-minutes-after-2-unsuccessful-login-attempts" class="list-group-item list-group-item-1 " > How to blocked login for few minutes after 2 unsuccessful login attempts?</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-get-number-of-days-between-two-dates-in-php" class="list-group-item list-group-item-1 " > How to get number of days between two dates in php?</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/some-common-mistakes-for-php-developers-to-avoid" class="list-group-item list-group-item-1 " > Some Common Mistakes for PHP Developers to Avoid</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-convert-amount-in-crores-to-decimal-value-in-php" class="list-group-item list-group-item-1 " > How to convert amount in crores to decimal value in php?</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-print-all-alphabets-into-upper-in-php" class="list-group-item list-group-item-1 " > How to print all alphabets into upper in php</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-change-max-upload-file-size-in-php" class="list-group-item list-group-item-1 " > How to change max upload file size in php?</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-replace-words-using-string-function-in-php" class="list-group-item list-group-item-1 " > How to replace words using string function in PHP</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/php-implode-function" class="list-group-item list-group-item-1 " > PHP Implode() Function</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/php-explode-function" class="list-group-item list-group-item-1 " > PHP Explode() Function</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-count-the-length-of-string-in-php" class="list-group-item list-group-item-1 " > How to count the length of string in php</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-check-whether-a-variable-is-numeric-or-not-in-php" class="list-group-item list-group-item-1 " > How to check whether a variable is numeric or not in php</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-set-default-time-zone-in-php" class="list-group-item list-group-item-1 " > How to set default time zone in PHP</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-get-default-time-zone-in-php" class="list-group-item list-group-item-1 " > How to get default time zone in PHP</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-can-i-use-parse-str-function-in-php" class="list-group-item list-group-item-1 " > PHP Parse_Str Function</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-get-the-first-character-of-string-in-php" class="list-group-item list-group-item-1 " > How to get the first character of string in PHP</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/how-to-get-amounts-in-words-in-php" class="list-group-item list-group-item-1 " > How to get amount in words in php</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/php-date-time-set-function" class="list-group-item list-group-item-1 " > PHP Date Time Set Function</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/get-current-time-function-in-php" class="list-group-item list-group-item-1 " > PHP Get Current Time of Day Function</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/require-function-in-php" class="list-group-item list-group-item-1 " > Require Function() in PHP</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/difference-between-echo,-print-and-print-r-in-php" class="list-group-item list-group-item-1 " > Difference between echo, print and print_r in PHP</a>
+    </div><div class="dv-3">
+        <span class="info-red"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="dv-2">
+        <a href="/get-the-unique-id-of-the-last-inserted-row-in-php-mysql" class="list-group-item list-group-item-1 " > Get the unique id of the last inserted row in PHP MYSQL</a>
+    </div>  </div> 
+</div>
+     </div>
+      <div class="clearfix"></div>
+       <div class="widget">
+        <div class="list-group">
+          <h5 class="widget-title">Hot <span class="info-red">Deals</span></h5>
+						<div class="single-wid-post sn-1">
+                            <a href="http://www.semrush.com/sem/?ref=1556867598&refer_source=&utm_source=berush&utm_medium=promo&utm_campaign=banner" target="_blank">
+                                <img src="uploads/1550636417.png" alt="" class="alignleft">
+                                <h2>Free Tool - SEO and SEM</h2>
+                            </a>
+                          <div class="sidebar-content">
+                               All-in-one marketing toolkit for digital marketing professionals. Free Trial<br>
+                 <p><a href="http://www.semrush.com/sem/?ref=1556867598&refer_source=&utm_source=berush&utm_medium=promo&utm_campaign=banner" target="_blank" title="Free Tool - SEO and SEM">View More →</a></p>
+	        </div>                     </div>
+                      </div> 
+                       </div> 
+ <div class="clearfix"></div> 
+<div class="widget">
+<div class="list-group">
+<h5 class="widget-title">News <span class="info-red">letter</span></h5>
+<div class="news-latters">	
+<p class="text-1">Subscribe To Never Miss an Article From </p>
+<span id="subscribe_now"></span>
+<form action="" method="post" class="">
+<input class="email-field" type="text" name="email" id="subscribe_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required placeholder="Enter Your Email">
+<div class="consent-wrapper">
+<label for="consent-field">
+<input class="consent-field" id="check_consent" type="checkbox" name="check_consent" value="Yes" required="">
+I consent to my submitted data being collected via this form*					
+</label>
+</div>
+<div class="consent-wrapper-x">
+<input class="submit-1" type="button" onclick="SubscribeNow(this.value);" name="submit" value="Sign Up Now">
+</div>
+</form>	
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+ <div>
+             <!-- Coding Tag New Right Side -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2433850953168520"
+    data-ad-slot="3619528699"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<br>
+</div>
+</div>                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+   
+<div id="each" class="modal fade" role="dialog"
+aria-hidden="true">
+  <div class="modal-dialog mid-model">
+  <div class="modal-content br-rd">
+      <div class="modal-header border-none bz-bz">
+        <button type="button" class="close-button" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center">
+            <div class="str-mid">
+             <a href="https://www.codingtag.com/" class="img-p" rel="home" >
+             <img src="img/code-1.png" class="img-responsive center-block" alt="coding tag" itemprop="logo">
+             </a>
+             </div>
+             </h4>
+             <div class="clearfix"></div>
+             <h2>Gain Exposure Through <br/> Our Learning Trends</h2>
+      </div>
+      <div class="modal-body">
+          <div class="row d-flex flex-column-reverse">
+        <div class="col-md-6 newpopup-img onlt-mb-hide">
+           <div class="popup-input">
+            <img src="img/newsletter-2.png" class="img-responsive center-block" alt="coding tag" itemprop="logo">
+           </div>
+        </div>
+        <div class="col-md-6 newpopup-img">
+            <form action="" method="post" class="popup-input">
+                 <span id="blogpopup_news"></span>
+ <div class="name-in">
+<input class="email-field" type="text" name="name" id="bpopup_name" pattern="" required="" placeholder="Name">
+ </div>
+ <div class="ema-c">
+<input class="email-field" type="text" id="bpopup_email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" placeholder="Enter Your Email">
+</div>
+<div class="consent-wrapper-x">
+<input class="submit-1 newsm" type="button" onclick="getBlogNewsletter(338)" value="SIGN UP">
+  </div>
+</form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<footer class="row footer mg-zero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-widget"><h5 class="footer-wid-title">Non IT</h5>
+				    <div class="ad-img">
+                       <div class="list-group add-ul"><ul><li><a href="banking-full-forms">Full Forms</a></li><li><a href="common-grammar-errors">Verbal Ability</a></li><li><a href="current-affairs-september-2019-3rd-week">Current Affairs</a></li></ul></div> 
+                        </div>                    
+                    </div>
+                </div><div class="col-md-4 col-sm-4">
+                    <div class="footer-widget"><h5 class="footer-wid-title">Professional Format</h5>
+				    <div class="ad-img">
+                       <div class="list-group add-ul"><ul><li><a href="resume-formats">Resume Formats</a></li><li><a href="offer-letter-format ">Offer Letter</a></li></ul></div> 
+                        </div>                    
+                    </div>
+                </div>                </div>
+            </div>
+        <div class="w3-value">
+                 <div class="col-md-3">
+                </div>
+                 <div class="col-md-6 text-center">
+                    <div class="footer-menu">
+                        <ul>
+                <li><a href="about">About</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
+                <li><a href="disclaimer">Disclaimer</a></li>
+                <li><a href="contact">Contact</a></li>
+                   </ul>
+                    </div>
+                    <div class="footer-copyright">
+<p> 2019-20 | Coding Tag.</p>
+</div>
+        </div>
+         <div class="col-md-3">
+            <div class="footer-menu footer-1 mb-hide">
+                 <ul>
+                   <li></li>
+                    <li></li>
+                    </ul> 
+            </div>
+                  <div class="footer-menu footer-1">
+                   <div class="social-icon footer-icon">
+                        <a target="_blank" href="https://www.facebook.com/codingtag/"rel="nofollow"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://twitter.com/Codingtag"rel="nofollow"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/codingtag/"rel="nofollow"><i class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCgdQyLCJVf4L7XZd7nZRjzQ"rel="nofollow"><i class="fa fa-youtube-play"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/coding-tag-6954a8166/" rel="nofollow"><i class="fa fa-linkedin"></i></a>
+                </div>
+                </div>
+</div>
+</div>
+</div>
+</footer>
+<div id="toTop"> <i class="fa fa-angle-up"></i> </div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content br-rd">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> <a href="https://www.codingtag.com/" class="img-p" rel="home" >
+             <img src="img/code-1.png" class="img-responsive center-block" alt="coding tag"></a></h4>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+        <div class="col-xs-5">
+            <img src="img/dummy.png" class="img-responsive free-pdfimg" alt="codingtag">
+        </div>
+        <div class="col-xs-7 newpopup-img">
+            <form  method="post" class="popup-input">
+               <h4>GET OUR Guide to</h4> 
+               <div class="int-head">
+                 <input type="text" id="freepdf_title" >
+                 </div>
+                 <span id="getpdf_msg"></span>
+                      <input type="hidden" id="freepdf_id" >
+<input class="email-field" type="text" name="email" id="pdf_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" placeholder="Enter Your Email">
+<div class="consent-wrapper-x">
+<input class="submit-1" type="button" onclick="getPDFmail(this.value)" value="DOWNLOAD FOR FREE">
+  </div>
+</form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<div class="clearfix"></div>
+<script src="js/jquery.1.11.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script  src="js/gen_validatorv31.js"></script>
+<script  src="js/main.js"></script>
+<script type="text/javascript" src="https://a.opmnstr.com/app/js/api.min.js" data-account="75411" data-user="67050" async></script>
+
+</body>
+<script type="text/javascript">
+   (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+   vgo('setAccount', '799372511');
+   vgo('setTrackByDefault', true);
+   vgo('process');
+</script>
+<script>
+function GetCommentBox(t,blog_id,comment_id,level)
+{
+    var gst_url= "ajax/ajax_blogpopup.php";
+    jQuery.ajax({
+    type: "GET",             
+    url: gst_url,
+    data: "blog_comment=Comment Box"+"&blog_id="+blog_id+"&comment_id="+comment_id+"&level="+level,
+    success: function(data) {
+    $('#cmt'+comment_id).html(data);
+    $('#cmt'+comment_id).toggle("slide");
+	  }
+	  });
+}
+function reply_comment(t,blog_id,comment_id,level)
+{
+    name =document.getElementById("name"+comment_id).value;
+  	email =document.getElementById("email"+comment_id).value;
+   	comment =document.getElementById("comment"+comment_id).value;
+	if((blog_id=='') || (name=='')||(comment=='')||(email=='')){
+	    alert('All fields are mandatory.');
+	    return false;
+	} 
+    var gst_url= "ajax/ajax_blogpopup.php";
+    jQuery.ajax({
+    type: "GET",             
+    url: gst_url,
+    data: "blog_comment=Comment Box"+"&blog_id="+blog_id+"&comment_id="+comment_id+"&level="+level+"&name="+name+"&email="+email+"&comment="+comment+"&reply_comment=Reply Comment",
+    success: function(data) {
+    $('#cmt'+comment_id).html(data);
+	  }
+	  });
+}
+</script>
+<script>
+function update_like(blog_id){
+  if(window.XMLHttpRequest)
+	  {
+	xmlhttp=new XMLHttpRequest();
+	  }
+		else
+		  {
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		    {
+		    document.getElementById("blog_like_10").innerHTML=xmlhttp.responseText;
+		    }
+		  }
+		xmlhttp.open("POST","ajax/ajaxqry.php?up_com=1&blog_id="+blog_id,true);
+		xmlhttp.send();
+}
+function update_comment(blog_id){
+  		name =document.getElementById("name").value;
+  		email =document.getElementById("email").value;
+   		comment =document.getElementById("comment").value;
+	if((blog_id!='')&&(name!='')&&(comment!='')&&(email!='')){
+	  if(window.XMLHttpRequest)
+	  {
+		  xmlhttp=new XMLHttpRequest();
+	  }
+		else
+		  {
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		    {
+		    document.getElementById("comments").innerHTML=xmlhttp.responseText;
+		    }
+		  }
+		xmlhttp.open("GET","ajax/ajaxqry.php?up_com=1&blog_id="+blog_id+"&name="+name+"&email="+email+"&comment="+comment,true);
+		xmlhttp.send();
+	}
+	else{
+	    alert('All fields are mandatory.');
+	}
+}
+function home_post(i,limit){
+	  if(window.XMLHttpRequest)
+	  {
+		  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	    {
+	   document.getElementById("home_blogs").innerHTML=xmlhttp.responseText;
+	    }
+	  }
+	xmlhttp.open("GET","ajax/ajax_home.php?i="+i+"&limit="+limit,true);
+	xmlhttp.send();
+}
+function getBlogNewsletter(blog_id){
+  	name =document.getElementById("bpopup_name").value;
+  	email =document.getElementById("bpopup_email").value;
+if((blog_id!='')&&(name!='')&&(email!='')){
+   if ((name.length) < 2) {
+       alert("Please enter proper name.");
+            return false;
+        }
+	  if(window.XMLHttpRequest)
+	  {
+	  xmlhttp=new XMLHttpRequest();
+	  }
+		else
+		{
+		 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+		xmlhttp.onreadystatechange=function()
+		  {
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		    {
+		        
+		    document.getElementById("blogpopup_news").innerHTML=xmlhttp.responseText;
+		    }
+		  }
+		xmlhttp.open("GET","ajax/ajax_blogpopup.php?blog_popup=popup_newsletter&blog_id="+blog_id+"&name="+name+"&email="+email,true);
+		xmlhttp.send();
+	}
+	else{
+	    alert('All fields are mandatory.');
+	}
+}
+
+/*$(window).load(function(){
+   setTimeout(function(){
+       $('#each').modal('show');
+   }, 2000);
+});*/
+
+$(window).load(function(){
+      
+$(document).ready(function(){
+    var  name_ =document.getElementById("bpopup_name_").value;
+           setTimeout(function(){
+            if(!Cookies.get(name_)) {
+              $("#each").modal('show');
+              Cookies.set(name_, true);
+            } else {
+              
+            }
+              
+    },15000);
+ });
+
+    });
+
+</script>
+</html>

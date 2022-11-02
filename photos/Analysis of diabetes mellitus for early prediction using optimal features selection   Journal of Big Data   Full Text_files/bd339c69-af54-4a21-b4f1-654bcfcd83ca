@@ -1,0 +1,1 @@
+Krux.ns.macmillan.kxjsonp_consent_set_1({"status":400,"body":{"dt":"kxcookie","settings":{"dc":1,"al":1,"tg":1,"cd":0,"sh":0,"re":0},"pr":"global","code":"bad_request","idt":"device","idv":"","request_id":"1tTglGgP0cVD6vl17j2rsO","errors":{"idv":"no identifier found for user"},"timestamp":1583393657}});

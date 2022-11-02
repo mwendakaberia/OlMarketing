@@ -1,0 +1,3132 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com/">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-5Bs4ERl99/u2AUfpOZF2F0cdfNby7+Vd9teUshXUBPo5CjwECR7IAEf+weI/eCk5tF7K1h3O8hd8k0+P/HePeg==" rel="stylesheet" href="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/frameworks-e41b3811197df7fbb60147e939917617.css">
+  <link crossorigin="anonymous" media="all" integrity="sha512-21eX2YaEYIYa91WFh0mXaxJ3wLQxy2ldlpRbyuCueK3MvqHGEzmXYPkMQ4XBtASauZXKlL1hPxQQU9g28R03wQ==" rel="stylesheet" href="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/site-db5797d9868460861af755858749976b.css">
+    <link crossorigin="anonymous" media="all" integrity="sha512-Re61UH4xUBCOxx/3uaTk/9AqjeMSjHipJO5zH6E+sQMQ+Zkxn17bzp/SgdY7c/FV1tXeSfswGs0dx2OMPMsIrg==" rel="stylesheet" href="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/github-45eeb5507e3150108ec71ff7b9a4e4ff.css">
+    
+    
+    
+    
+
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Connect two elements / draw a path between two elements  with SVG path (using jQuery) · GitHub</title>
+    <meta name="description" content="Connect two elements / draw a path between two elements  with SVG path (using jQuery) - connectHTMLelements_SVG.png">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://gist.github.com/opensearch-gist.xml" title="Gist">
+  <link rel="fluid-icon" href="https://gist.github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://raw.githubusercontent.com/gist/alojzije/11127839/raw/b2ccb171a5fb4108b174be0af18862dd0eba106b/connectHTMLelements_SVG.png"><meta name="twitter:site" content="@github"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Connect two elements / draw a path between two elements  with SVG path (using jQuery)"><meta name="twitter:description" content="Connect two elements / draw a path between two elements  with SVG path (using jQuery) - connectHTMLelements_SVG.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/gist/alojzije/11127839/raw/b2ccb171a5fb4108b174be0af18862dd0eba106b/connectHTMLelements_SVG.png"><meta property="og:site_name" content="Gist"><meta property="og:type" content="article"><meta property="og:title" content="Connect two elements / draw a path between two elements  with SVG path (using jQuery)"><meta property="og:url" content="https://gist.github.com/alojzije/11127839"><meta property="og:description" content="Connect two elements / draw a path between two elements  with SVG path (using jQuery) - connectHTMLelements_SVG.png"><meta property="article:author" content="262588213843476"><meta property="article:publisher" content="262588213843476">
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  
+
+  <meta name="request-id" content="8A84:5E65:9B3545:10CAC67:5E6F60AE" data-pjax-transient="true"><meta name="html-safe-nonce" content="2a7f7075d7d5339afe7ed7a9f17bf65559cb701c" data-pjax-transient="true"><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIiwicmVxdWVzdF9pZCI6IjhBODQ6NUU2NTo5QjM1NDU6MTBDQUM2Nzo1RTZGNjBBRSIsInZpc2l0b3JfaWQiOiI3NDcxOTAyNzkzMTQxMjkzMiIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-pjax-transient="true"><meta name="visitor-hmac" content="3db3e841081edfaaf6656924aa41c4b2c4aee9cdcabe041601b0a12951c6c34c" data-pjax-transient="true">
+
+
+
+  <meta name="github-keyboard-shortcuts" content="" data-pjax-transient="true">
+
+  
+
+  <meta name="selected-link" value="gist_code" data-pjax-transient="">
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com"><meta name="octolytics-app-id" content="gist"><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event"><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id">
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;gist-id&gt;" data-pjax-transient="true">
+
+
+
+    <meta name="google-analytics" content="UA-3769691-4">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+    <meta name="octolytics-dimension-public" content="true"><meta name="octolytics-dimension-gist_id" content="11127839"><meta name="octolytics-dimension-gist_name" content="11127839"><meta name="octolytics-dimension-anonymous" content="false"><meta name="octolytics-dimension-owner_id" content="6187231"><meta name="octolytics-dimension-owner_login" content="alojzije"><meta name="octolytics-dimension-forked" content="false">
+
+  <meta class="js-ga-set" name="dimension5" content="public">
+  <meta class="js-ga-set" name="dimension6" content="owned">
+  <meta class="js-ga-set" name="dimension7" content="css html javascript markdown unknown">
+
+
+      <meta name="hostname" content="gist.github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="gist.github.com">
+
+
+    <meta name="enabled-features" content="MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,RELATED_ISSUES">
+
+  <meta http-equiv="x-pjax-version" content="371e66ea12419ae1d538e0936bd0742e">
+  
+
+      <link href="https://gist.github.com/alojzije.atom" rel="alternate" title="atom" type="application/atom+xml">
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-5hVNC4CXyolsNW7Su6XRzySIA8wItt7030sh1rRwjvqH5aASFMWfrEXSkuyWvgYPRZQSUmHqNBNQ+8N3kZ61fQ==" rel="stylesheet" href="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/gist-e6154d0b8097ca896c356ed2bba5d1cf.css">
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  </head>
+
+  <body class="logged-out env-production min-width-lg">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+
+
+
+        <div class="Header" role="banner">
+  <div class="Header-item">
+    <a class="Header-link" data-hotkey="g d" aria-label="Gist Homepage " href="https://gist.github.com/">
+  <svg class="octicon octicon-mark-github v-align-middle d-none" height="24" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+  <svg height="24" class="octicon octicon-logo-github v-align-middle" viewBox="0 0 45 16" version="1.1" width="67" aria-hidden="true"><path fill-rule="evenodd" d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 00-.146-.18zM42.23 9.84c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61h-2.1c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z"></path></svg>
+  <svg height="24" class="octicon octicon-logo-gist v-align-middle" viewBox="0 0 25 16" version="1.1" width="37" aria-hidden="true"><path fill-rule="evenodd" d="M4.7 8.73h2.45v4.02c-.55.27-1.64.34-2.53.34-2.56 0-3.47-2.2-3.47-5.05 0-2.85.91-5.06 3.48-5.06 1.28 0 2.06.23 3.28.73V2.66C7.27 2.33 6.25 2 4.63 2 1.13 2 0 4.69 0 8.03c0 3.34 1.11 6.03 4.63 6.03 1.64 0 2.81-.27 3.59-.64V7.73H4.7v1zm6.39 3.72V6.06h-1.05v6.28c0 1.25.58 1.72 1.72 1.72v-.89c-.48 0-.67-.16-.67-.7v-.02zm.25-8.72c0-.44-.33-.78-.78-.78s-.77.34-.77.78.33.78.77.78.78-.34.78-.78zm4.34 5.69c-1.5-.13-1.78-.48-1.78-1.17 0-.77.33-1.34 1.88-1.34 1.05 0 1.66.16 2.27.36v-.94c-.69-.3-1.52-.39-2.25-.39-2.2 0-2.92 1.2-2.92 2.31 0 1.08.47 1.88 2.73 2.08 1.55.13 1.77.63 1.77 1.34 0 .73-.44 1.42-2.06 1.42-1.11 0-1.86-.19-2.33-.36v.94c.5.2 1.58.39 2.33.39 2.38 0 3.14-1.2 3.14-2.41 0-1.28-.53-2.03-2.75-2.23h-.03zm8.58-2.47v-.86h-2.42v-2.5l-1.08.31v2.11l-1.56.44v.48h1.56v5c0 1.53 1.19 2.13 2.5 2.13.19 0 .52-.02.69-.05v-.89c-.19.03-.41.03-.61.03-.97 0-1.5-.39-1.5-1.34V6.94h2.42v.02-.01z"></path></svg>
+</a>
+  </div>
+
+
+  <div class="Header-item Header-item--full js-site-search">
+      <div class="header-search mr-3">
+
+<!-- '"` --><!-- </textarea></xmp> --><form class="position-relative js-quicksearch-form" role="search" aria-label="Site" action="/search" accept-charset="UTF-8" method="get">
+  <div class="header-search-wrapper form-control input-sm js-chromeless-input-container">
+    <input type="text" class="form-control input-sm js-site-search-focus header-search-input" data-hotkey="s,/" name="q" aria-label="Search" placeholder="Search…" autocorrect="off" autocomplete="off" autocapitalize="off">
+  </div>
+
+</form></div>
+
+
+    <nav aria-label="Global" class="d-flex">
+  <a class="Header-link mr-3" data-ga-click="Header, go to all gists, text:all gists" href="https://gist.github.com/discover">All gists</a>
+
+  <a class="Header-link mr-3" data-ga-click="Header, go to GitHub, text:Back to GitHub" href="https://github.com/">Back to GitHub</a>
+
+
+
+</nav>
+
+  </div>
+
+
+
+
+    <div class="Header-item f4 mr-0" role="navigation">
+      <a class="HeaderMenu-link no-underline mr-3" data-ga-click="Header, sign in" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;gist header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8c370dbff61f90bcfc62e0400c3a34485cbfd2166ec457906325b6fc6a8b53b2" href="https://gist.github.com/auth/github?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">
+        Sign&nbsp;in
+</a>        <a class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1" data-ga-click="Header, sign up" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;gist header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="01578cdc9367e18eec6dcc8ef6420c1b68668ff14fd50dc5724883d6b6f2db28" href="https://gist.github.com/join?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839&amp;source=header-gist">
+          Sign&nbsp;up
+</a>    </div>
+</div>
+
+
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+</div>
+
+
+    
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled="">
+        <div itemscope="" itemtype="http://schema.org/Code">
+    <main id="gist-pjax-container" class="gist-content-wrapper" data-pjax-container="">
+      
+
+
+  <div class="gist-detail-intro gist-banner">
+    <div class="container-lg px-3">
+      <p class="lead">
+        Instantly share code, notes, and snippets.
+      </p>
+    </div>
+  </div>
+
+
+<div class="gisthead pagehead repohead readability-menu bg-gray-light pb-0 pt-3 mb-4">
+  <div class="container-lg px-3">
+    
+  
+
+
+<div class="mb-3 d-flex">
+  <h1 class="public css-truncate float-none flex-auto width-fit pl-0">
+    <a class="avatar mr-1" data-hovercard-type="user" data-hovercard-url="/users/alojzije/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/alojzije"><img src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/6187231.jpg" alt="@alojzije" width="26" height="26"></a>
+    <span class="author"><a data-hovercard-type="user" data-hovercard-url="/users/alojzije/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/alojzije">alojzije</a></span><!--
+        --><span class="path-divider">/</span><!--
+        --><strong itemprop="name" class="css-truncate-target" style="max-width: 410px"><a href="https://gist.github.com/alojzije/11127839">connectHTMLelements_SVG.png</a></strong>
+
+    <div class="d-block text-small text-gray">
+      Last active <time-ago datetime="2020-02-26T06:47:38Z" class="no-wrap" title="Feb 26, 2020, 9:47 AM GMT+3">19 days ago</time-ago>
+    </div>
+  </h1>
+
+  <ul class="pagehead-actions float-none">
+
+
+
+    <li>
+        <a class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to star a gist" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;gist star button&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="212fad40b9f11349b6f0967284cb6b1cc1a5c4b1429c2891c820e71442519471" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">
+    <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+    Star
+</a>
+  <a class="social-count" aria-label="108 users starred this gist" href="https://gist.github.com/alojzije/11127839/stargazers">
+    108
+</a>
+    </li>
+
+      <li>
+          <a class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to fork a gist" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;gist fork button&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6ccfb68d9594fbe622aa80c27b8f0fb595ce696c7f4b068ad2a9ff15db9ebfff" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">
+    <svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+    Fork
+</a>    <a class="social-count js-social-count" href="https://gist.github.com/alojzije/11127839/forks" aria-label="32 users forked this gist">
+      32
+    </a>
+
+      </li>
+  </ul>
+
+</div>
+
+<div class="d-flex">
+  <div class="flex-auto">
+    <nav class="reponav js-repo-nav js-sidenav-container-pjax" aria-label="Gist" data-pjax="#gist-pjax-container">
+
+  <a class="js-selected-navigation-item selected reponav-item" data-pjax="true" data-hotkey="g c" aria-current="page" data-selected-links="gist_code /alojzije/11127839" href="https://gist.github.com/alojzije/11127839">
+    <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+    Code
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-pjax="true" data-hotkey="g r" data-selected-links="gist_revisions /alojzije/11127839/revisions" href="https://gist.github.com/alojzije/11127839/revisions">
+      <svg class="octicon octicon-git-commit" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10.86 7c-.45-1.72-2-3-3.86-3-1.86 0-3.41 1.28-3.86 3H0v2h3.14c.45 1.72 2 3 3.86 3 1.86 0 3.41-1.28 3.86-3H14V7h-3.14zM7 10.2c-1.22 0-2.2-.98-2.2-2.2 0-1.22.98-2.2 2.2-2.2 1.22 0 2.2.98 2.2 2.2 0 1.22-.98 2.2-2.2 2.2z"></path></svg>
+      Revisions
+      <span class="Counter">22</span>
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-pjax="true" data-hotkey="g s" data-selected-links="gist_stars /alojzije/11127839/stargazers" href="https://gist.github.com/alojzije/11127839/stargazers">
+      <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+      Stars
+      <span class="Counter">108</span>
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-pjax="true" data-hotkey="g f" data-selected-links="gist_forks /alojzije/11127839/forks" href="https://gist.github.com/alojzije/11127839/forks">
+      <svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 00-1-3.72C.88 1 0 1.89 0 3a2 2 0 001 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      Forks
+      <span class="Counter">32</span>
+</a></nav>
+
+  </div>
+
+  <div class="file-navigation-options" data-multiple="">
+
+    <div class="file-navigation-option v-align-middle">
+
+  <div class="input-group">
+    <div class="input-group-button">
+      <details class="details-reset details-overlay select-menu">
+        <summary class="btn btn-sm select-menu-button" data-ga-click="Repository, clone Embed, location:repo overview" aria-haspopup="menu" role="button">
+          <span data-menu-button="">Embed</span>
+        </summary>
+        <details-menu class="select-menu-modal position-absolute" data-menu-input="gist-share-url" style="z-index: 99;" aria-label="Clone options" role="menu">
+          <div class="select-menu-header">
+            <span class="select-menu-title">What would you like to do?</span>
+          </div>
+          <div class="select-menu-list">
+              <button name="button" type="button" class="select-menu-item width-full" aria-checked="true" role="menuitemradio" value="&lt;script src=&quot;https://gist.github.com/alojzije/11127839.js&quot;&gt;&lt;/script&gt;" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;EMBED&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:11127839,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e6e8bb7ef2bed53d253b8bc19e1aa21892bd12d756007178791c0392b90a440a">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <div class="select-menu-item-text">
+                  <span class="select-menu-item-heading" data-menu-button-text="">
+                    
+                    Embed
+                  </span>
+                    <span class="description">
+                      Embed this gist in your website.
+                    </span>
+                </div>
+</button>              <button name="button" type="button" class="select-menu-item width-full" aria-checked="false" role="menuitemradio" value="https://gist.github.com/alojzije/11127839" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;SHARE&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:11127839,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a1fc23d9be8d66c707258c9ec5252cde9141a5184b5d936f5acb99a954087d88">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <div class="select-menu-item-text">
+                  <span class="select-menu-item-heading" data-menu-button-text="">
+                    
+                    Share
+                  </span>
+                    <span class="description">
+                      Copy sharable link for this gist.
+                    </span>
+                </div>
+</button>              <button name="button" type="button" class="select-menu-item width-full" aria-checked="false" role="menuitemradio" value="https://gist.github.com/11127839.git" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;USE_HTTPS&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:11127839,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="3f48a0001754cda239b4e294d0d0c4375aede8e34f4a9debac4c05bfe8c9df67">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <div class="select-menu-item-text">
+                  <span class="select-menu-item-heading" data-menu-button-text="">
+                    Clone via
+                    HTTPS
+                  </span>
+                    <span class="description">
+                      Clone with Git or checkout with SVN using the repository’s web address.
+                    </span>
+                </div>
+</button>          </div>
+          <div class="select-menu-list">
+            <a role="menuitem" class="select-menu-item select-menu-action" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank">
+              <svg class="octicon octicon-question select-menu-item-icon" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+              <div class="select-menu-item-text">
+                Learn more about clone URLs
+              </div>
+            </a>
+          </div>
+        </details-menu>
+      </details>
+    </div>
+
+    <input id="gist-share-url" type="text" data-autoselect="" class="form-control input-monospace input-sm" value="&lt;script src=&quot;https://gist.github.com/alojzije/11127839.js&quot;&gt;&lt;/script&gt;" aria-label="Clone this repository at &lt;script src=&quot;https://gist.github.com/alojzije/11127839.js&quot;&gt;&lt;/script&gt;" readonly="readonly">
+
+    <div class="input-group-button">
+      <clipboard-copy for="gist-share-url" aria-label="Copy to clipboard" class="btn btn-sm zeroclipboard-button" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;COPY_URL&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:11127839,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0354a51e233749cbb5c96413878002b524e4bb7a3f693ca7596b53d66cc129b8" tabindex="0" role="button"><svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg></clipboard-copy>
+    </div>
+  </div>
+</div>
+
+
+    <div class="file-navigation-option">
+    <a class="btn btn-sm tooltipped tooltipped-s tooltipped-multiline js-remove-unless-platform" data-platforms="windows,mac" aria-label="Save alojzije/11127839 to your computer and use it in GitHub Desktop." data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;OPEN_IN_DESKTOP&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:11127839,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="d89face49675f6850d8054581dc39e49a8617794e40eb23164299c04119b58db" href="https://desktop.github.com/"><svg class="octicon octicon-desktop-download" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 6h3V0h2v6h3l-4 4-4-4zm11-4h-4v1h4v8H1V3h4V2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1z"></path></svg></a>
+</div>
+
+
+    <div class="file-navigation-option">
+      <a class="btn btn-sm" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;DOWNLOAD_ZIP&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:11127839,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2d7a1e220bb0f08c9495c47ae79a9f74ec858bb5c5be4ef4e2501ae272e06e74" data-ga-click="Gist, download zip, location:gist overview" href="https://gist.github.com/alojzije/11127839/archive/b2ccb171a5fb4108b174be0af18862dd0eba106b.zip">Download ZIP</a>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<div class="container-lg px-3 new-discussion-timeline">
+  <div class="repository-content gist-content">
+    
+  <div>
+      <div itemprop="about">
+    Connect two elements / draw a path between two elements with SVG path (using jQuery)
+  </div>
+
+
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-connecthtmlelements_svg-png" class="file">
+      <div class="file-header">
+        <div class="file-actions">
+
+          <a class="btn btn-sm " href="https://gist.github.com/alojzije/11127839/raw/b2ccb171a5fb4108b174be0af18862dd0eba106b/connectHTMLelements_SVG.png">Raw</a>
+        </div>
+        <div class="file-info">
+          <span class="icon">
+            <svg class="octicon octicon-file-media" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5h2v2H6V5zm6-.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v11l3-5 2 4 2-2 3 3V5z"></path></svg>
+          </span>
+          <a class="css-truncate" href="#file-connecthtmlelements_svg-png">
+            <strong class="user-select-contain gist-blob-name css-truncate-target">
+              connectHTMLelements_SVG.png
+            </strong>
+          </a>
+        </div>
+      </div>
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-text ">
+      <div class="text-center p-3">
+          <span class="border-wrap"><img src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/connectHTMLelements_SVG.png" alt="connectHTMLelements_SVG.png"></span>
+      </div>
+  </div>
+
+  </div>
+</div>
+
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-howto-md" class="file">
+      <div class="file-header">
+        <div class="file-actions">
+
+          <a class="btn btn-sm " href="https://gist.github.com/alojzije/11127839/raw/b2ccb171a5fb4108b174be0af18862dd0eba106b/howTo.md">Raw</a>
+        </div>
+        <div class="file-info">
+          <span class="icon">
+            <svg class="octicon octicon-gist" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 5L10 7.5 7.5 10l-.75-.75L8.5 7.5 6.75 5.75 7.5 5zm-3 0L2 7.5 4.5 10l.75-.75L3.5 7.5l1.75-1.75L4.5 5zM0 13V2c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v11c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1zm1 0h10V2H1v11z"></path></svg>
+          </span>
+          <a class="css-truncate" href="#file-howto-md">
+            <strong class="user-select-contain gist-blob-name css-truncate-target">
+              howTo.md
+            </strong>
+          </a>
+        </div>
+      </div>
+    
+  <div id="file-howto-md-readme" class="Box-body readme blob js-code-block-container">
+    <article class="markdown-body entry-content p-5" itemprop="text"><h2><a id="user-content-connect-html-elements-with-svg-path" class="anchor" aria-hidden="true" href="#connect-html-elements-with-svg-path"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>connect html elements with SVG path</h2>
+<p>Gist contains a javaScript file <em>svgDraw.js</em> for connecting any two html elements with an SVG path in a pipe-like fashion.
+It connects the bottom-middle point of the "higher" element with the top-middle point ot the "lower" element. <a href="https://gist.github.com/alojzije/11127839#file-demo-png"> preview </a></p>
+<p>Also, <em>index.html</em>, and <em>style.css</em> are provided for demonstration purposes.</p>
+<p>==</p>
+<h6><a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>USAGE:</h6>
+<p>In odrer to connect any two elements, they need an ID. For the purposes of this demonstration, we shall id them as <em>"Mary"</em> and <em>"Tom"</em>. Style with <em>CSS</em> as you normally would.</p>
+<div class="highlight highlight-text-html-basic"><pre> <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">Mary</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+ <span class="pl-kos">&lt;</span><span class="pl-ent">p</span> <span class="pl-c1">id</span>="<span class="pl-s">Tom</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span></pre></div>
+<br>
+<p>Next, (<em>also in your .html</em>) we need to add a path with which to connect our Mary and Tom elements. We do that by appending a child <code>&lt;path&gt;</code> element to <code>&lt;svg&gt;</code>.
+Note that they also have unique IDs, <em>"myNewPath"</em> and <em>"svg1"</em>, respectively .</p>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">svg</span> <span class="pl-c1">id</span>="<span class="pl-s">svg1</span>" <span class="pl-c1">width</span>="<span class="pl-s">0</span>" <span class="pl-c1">height</span>="<span class="pl-s">0</span>" <span class="pl-kos">&gt;</span>
+       <span class="pl-kos">&lt;</span><span class="pl-ent">path</span>
+            <span class="pl-c1">id</span>="<span class="pl-s">myNewPath</span>"
+            <span class="pl-c1">d</span>="<span class="pl-s">M0 0</span>"             
+            <span class="pl-c1">stroke-width</span>="<span class="pl-s">0.3em</span>"
+            <span class="pl-c1">style</span>="<span class="pl-s">stroke:#555; fill:none;  </span>"/&gt;
+<span class="pl-kos">&lt;/</span><span class="pl-ent">svg</span><span class="pl-kos">&gt;</span></pre></div>
+<br>
+<p>And now for the fun part. The actual connecting!
+In <em>svgDraw.js</em> locate function <code>connectAll()</code> and add your connection like so:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">connectAll</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-c">// connect all the paths you want!</span>
+    <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#myNewPath"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#Mary"</span><span class="pl-kos">)</span><span class="pl-kos">,</span>  <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#Tom"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    ...
+    <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#someOtherPath"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#purple"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#teal"</span><span class="pl-kos">)</span>  <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#yetAnotherPath"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#Tom"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#teal"</span><span class="pl-kos">)</span>  <span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
+<br>
+<h6><a id="user-content-aand-youre-done" class="anchor" aria-hidden="true" href="#aand-youre-done"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aand... you're done!</h6>
+<h6><a id="user-content-you-can-repeat-these-steps-any-number-of-times-connecting-any-number-of-different-elements--or--connecting-any-one-element-with-any-number-of-different-elements-for-that-matter-" class="anchor" aria-hidden="true" href="#you-can-repeat-these-steps-any-number-of-times-connecting-any-number-of-different-elements--or--connecting-any-one-element-with-any-number-of-different-elements-for-that-matter-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>You can repeat these steps any number of times connecting any number of different elements ( or  connecting any <em><strong>one</strong></em> element with any number of different elements, for that matter :))</h6>
+</article>
+  </div>
+
+  </div>
+</div>
+
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-index-html" class="file">
+      <div class="file-header">
+        <div class="file-actions">
+
+          <a class="btn btn-sm " href="https://gist.github.com/alojzije/11127839/raw/b2ccb171a5fb4108b174be0af18862dd0eba106b/index.html">Raw</a>
+        </div>
+        <div class="file-info">
+          <span class="icon">
+            <svg class="octicon octicon-gist" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 5L10 7.5 7.5 10l-.75-.75L8.5 7.5 6.75 5.75 7.5 5zm-3 0L2 7.5 4.5 10l.75-.75L3.5 7.5l1.75-1.75L4.5 5zM0 13V2c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v11c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1zm1 0h10V2H1v11z"></path></svg>
+          </span>
+          <a class="css-truncate" href="#file-index-html">
+            <strong class="user-select-contain gist-blob-name css-truncate-target">
+              index.html
+            </strong>
+          </a>
+        </div>
+      </div>
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-index-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-index-html-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-index-html-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-index-html-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-index-html-LC4" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">UTF-8</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-index-html-LC5" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>Connect divs with SVG<span class="pl-kos">&lt;/</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-index-html-LC6" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">link</span> <span class="pl-c1">rel</span>="<span class="pl-s">stylesheet</span>" <span class="pl-c1">type</span>="<span class="pl-s">text/css</span>" <span class="pl-c1">href</span>="<span class="pl-s">style.css</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-index-html-LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">src</span>="<span class="pl-s">http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-index-html-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-index-html-LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-index-html-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">svgContainer</span>" <span class="pl-c1">style</span>="<span class="pl-s">margin: 50px 50px;</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-index-html-LC11" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">svg</span> <span class="pl-c1">id</span>="<span class="pl-s">svg1</span>" <span class="pl-c1">width</span>="<span class="pl-s">0</span>" <span class="pl-c1">height</span>="<span class="pl-s">0</span>" <span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-index-html-LC12" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">&lt;</span><span class="pl-ent">path</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-index-html-LC13" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">id</span>="<span class="pl-s">path1</span>"</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-index-html-LC14" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">d</span>="<span class="pl-s">M0 0</span>"         </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-index-html-LC15" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">stroke</span>="<span class="pl-s">#000</span>" </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-index-html-LC16" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">fill</span>="<span class="pl-s">none</span>" </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-index-html-LC17" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">stroke-width</span>="<span class="pl-s">12px</span>"<span class="pl-c1">;</span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-index-html-LC18" class="blob-code blob-code-inner js-file-line">         <span class="pl-kos">&lt;</span><span class="pl-ent">path</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-index-html-LC19" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">id</span>="<span class="pl-s">path2</span>"</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-index-html-LC20" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">d</span>="<span class="pl-s">M0 0</span>"             </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-index-html-LC21" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">stroke</span>="<span class="pl-s">#000</span>" </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-index-html-LC22" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">fill</span>="<span class="pl-s">none</span>" </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-index-html-LC23" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">stroke-width</span>="<span class="pl-s">12px</span>"<span class="pl-c1">;</span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-index-html-LC24" class="blob-code blob-code-inner js-file-line">         <span class="pl-kos">&lt;</span><span class="pl-ent">path</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-index-html-LC25" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">id</span>="<span class="pl-s">path3</span>"</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-index-html-LC26" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">d</span>="<span class="pl-s">M0 0</span>"      </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-index-html-LC27" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">stroke-width</span>="<span class="pl-s">8px</span>"</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-index-html-LC28" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">style</span>="<span class="pl-s">stroke:#000; fill:none;</span>"/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-index-html-LC29" class="blob-code blob-code-inner js-file-line">          <span class="pl-kos">&lt;</span><span class="pl-ent">path</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-index-html-LC30" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">id</span>="<span class="pl-s">path4</span>"</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-index-html-LC31" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">d</span>="<span class="pl-s">M0 0</span>"    </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-index-html-LC32" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">stroke-width</span>="<span class="pl-s">12px</span>"         </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-index-html-LC33" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">style</span>="<span class="pl-s">stroke:#000; fill:none;  stroke-width: 12px;</span>" /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-index-html-LC34" class="blob-code blob-code-inner js-file-line">          <span class="pl-kos">&lt;</span><span class="pl-ent">path</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-index-html-LC35" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">id</span>="<span class="pl-s">path5</span>"</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-index-html-LC36" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">d</span>="<span class="pl-s">M0 0</span>"    </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-index-html-LC37" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">stroke-width</span>="<span class="pl-s">10px</span>"         </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-index-html-LC38" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">style</span>="<span class="pl-s">stroke:#000; fill:none;</span>"/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-index-html-LC39" class="blob-code blob-code-inner js-file-line">          <span class="pl-kos">&lt;</span><span class="pl-ent">path</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-index-html-LC40" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">id</span>="<span class="pl-s">path6</span>"</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-index-html-LC41" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">d</span>="<span class="pl-s">M0 0</span>"    </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-index-html-LC42" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">stroke-width</span>="<span class="pl-s">10px</span>"         </td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-index-html-LC43" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">style</span>="<span class="pl-s">stroke:#000; fill:none;</span>"/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-index-html-LC44" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;/</span><span class="pl-ent">svg</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-index-html-LC45" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-index-html-LC46" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-index-html-LC47" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>= "<span class="pl-s">outer</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-index-html-LC48" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">teal</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-index-html-LC49" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">red</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-index-html-LC50" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">green</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-index-html-LC51" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">purple</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="file-index-html-LC52" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">orange</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="file-index-html-LC53" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">aqua</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="file-index-html-LC54" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="file-index-html-LC55" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="file-index-html-LC56" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">src</span>="<span class="pl-s">svgDraw.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="file-index-html-LC57" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="file-index-html-LC58" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-style-css" class="file">
+      <div class="file-header">
+        <div class="file-actions">
+
+          <a class="btn btn-sm " href="https://gist.github.com/alojzije/11127839/raw/b2ccb171a5fb4108b174be0af18862dd0eba106b/style.css">Raw</a>
+        </div>
+        <div class="file-info">
+          <span class="icon">
+            <svg class="octicon octicon-gist" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 5L10 7.5 7.5 10l-.75-.75L8.5 7.5 6.75 5.75 7.5 5zm-3 0L2 7.5 4.5 10l.75-.75L3.5 7.5l1.75-1.75L4.5 5zM0 13V2c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v11c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1zm1 0h10V2H1v11z"></path></svg>
+          </span>
+          <a class="css-truncate" href="#file-style-css">
+            <strong class="user-select-contain gist-blob-name css-truncate-target">
+              style.css
+            </strong>
+          </a>
+        </div>
+      </div>
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-css ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-style-css-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-style-css-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">body</span>{ <span class="pl-c1">background-color</span>:gray; }</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-style-css-LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-style-css-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">#</span><span class="pl-c1">svgContainer</span> { </td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-style-css-LC4" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">z-index</span>: <span class="pl-c1">-10</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-style-css-LC5" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">position</span>:absolute;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-style-css-LC6" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">background-color</span>:silver;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-style-css-LC7" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">opacity</span>: <span class="pl-c1">0.5</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-style-css-LC8" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-style-css-LC9" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-style-css-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">div</span>{ <span class="pl-c1">opacity</span>: <span class="pl-c1">0.6</span>; }</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-style-css-LC11" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-style-css-LC12" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-style-css-LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">#</span><span class="pl-c1">outer</span>{</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-style-css-LC14" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">margin</span>:<span class="pl-c1">0</span> auto;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-style-css-LC15" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">width</span>: <span class="pl-c1">80<span class="pl-smi">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-style-css-LC16" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-style-css-LC17" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-style-css-LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">#</span><span class="pl-c1">teal</span>{</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-style-css-LC19" class="blob-code blob-code-inner js-file-line"> 	<span class="pl-c1">width</span>: <span class="pl-c1">6<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-style-css-LC20" class="blob-code blob-code-inner js-file-line"> 	<span class="pl-c1">height</span>: <span class="pl-c1">6<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-style-css-LC21" class="blob-code blob-code-inner js-file-line"> 	<span class="pl-c1">background-color</span>:teal;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-style-css-LC22" class="blob-code blob-code-inner js-file-line"> 	<span class="pl-c1">margin-left</span>: <span class="pl-c1">10<span class="pl-smi">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-style-css-LC23" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-style-css-LC24" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">#</span><span class="pl-c1">orange</span>{</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-style-css-LC25" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">height</span>: <span class="pl-c1">4<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-style-css-LC26" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">width</span>: <span class="pl-c1">35<span class="pl-smi">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-style-css-LC27" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">padding</span>: <span class="pl-c1">2<span class="pl-smi">em</span></span> <span class="pl-c1">8<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-style-css-LC28" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">margin-left</span>: <span class="pl-c1">8<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-style-css-LC29" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">margin-top</span>: <span class="pl-c1">6<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-style-css-LC30" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">background-color</span>: orange; </td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-style-css-LC31" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-style-css-LC32" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-style-css-LC33" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">#</span><span class="pl-c1">red</span>{</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-style-css-LC34" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">width</span>:<span class="pl-c1">6<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-style-css-LC35" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">height</span>: <span class="pl-c1">4<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-style-css-LC36" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">margin-left</span>: <span class="pl-c1">30<span class="pl-smi">%</span></span>; </td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-style-css-LC37" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">padding</span>:<span class="pl-c1">4<span class="pl-smi">em</span></span> <span class="pl-c1">3<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-style-css-LC38" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">background-color</span>:red;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-style-css-LC39" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-style-css-LC40" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">#</span><span class="pl-c1">aqua</span>{</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-style-css-LC41" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">width</span>: <span class="pl-c1">5<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-style-css-LC42" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">height</span>: <span class="pl-c1">5<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-style-css-LC43" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">margin-left</span>:<span class="pl-c1">15<span class="pl-smi">%</span></span>; </td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-style-css-LC44" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">background-color</span>:aqua;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-style-css-LC45" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-style-css-LC46" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">#</span><span class="pl-c1">purple</span>{</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-style-css-LC47" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">width</span>: <span class="pl-c1">15<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-style-css-LC48" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">height</span>: <span class="pl-c1">5<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-style-css-LC49" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">background-color</span>:purple;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-style-css-LC50" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-style-css-LC51" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">#</span><span class="pl-c1">green</span>{</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="file-style-css-LC52" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">width</span>: <span class="pl-c1">5<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="file-style-css-LC53" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">height</span>: <span class="pl-c1">7<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="file-style-css-LC54" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">margin-top</span>: <span class="pl-c1">2<span class="pl-smi">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="file-style-css-LC55" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">margin-left</span>: <span class="pl-c1">50<span class="pl-smi">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="file-style-css-LC56" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">background-color</span>: green;</td>
+      </tr>
+      <tr>
+        <td id="file-style-css-L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="file-style-css-LC57" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-svgdraw-js" class="file">
+      <div class="file-header">
+        <div class="file-actions">
+
+          <a class="btn btn-sm " href="https://gist.github.com/alojzije/11127839/raw/b2ccb171a5fb4108b174be0af18862dd0eba106b/svgDraw.js">Raw</a>
+        </div>
+        <div class="file-info">
+          <span class="icon">
+            <svg class="octicon octicon-gist" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 5L10 7.5 7.5 10l-.75-.75L8.5 7.5 6.75 5.75 7.5 5zm-3 0L2 7.5 4.5 10l.75-.75L3.5 7.5l1.75-1.75L4.5 5zM0 13V2c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v11c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1zm1 0h10V2H1v11z"></path></svg>
+          </span>
+          <a class="css-truncate" href="#file-svgdraw-js">
+            <strong class="user-select-contain gist-blob-name css-truncate-target">
+              svgDraw.js
+            </strong>
+          </a>
+        </div>
+      </div>
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-javascript ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-svgdraw-js-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-svgdraw-js-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//helper functions, it turned out chrome doesn't support Math.sgn() </span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-svgdraw-js-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">function</span> <span class="pl-en">signum</span><span class="pl-kos">(</span><span class="pl-s1">x</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-svgdraw-js-LC3" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-kos">(</span><span class="pl-s1">x</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">0</span><span class="pl-kos">)</span> ? <span class="pl-c1">-</span><span class="pl-c1">1</span> : <span class="pl-c1">1</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-svgdraw-js-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">}</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-svgdraw-js-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-k">function</span> <span class="pl-en">absolute</span><span class="pl-kos">(</span><span class="pl-s1">x</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-svgdraw-js-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-kos">(</span><span class="pl-s1">x</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">0</span><span class="pl-kos">)</span> ? <span class="pl-c1">-</span><span class="pl-s1">x</span> : <span class="pl-s1">x</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-svgdraw-js-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">}</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-svgdraw-js-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-svgdraw-js-LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-k">function</span> <span class="pl-en">drawPath</span><span class="pl-kos">(</span><span class="pl-s1">svg</span><span class="pl-kos">,</span> <span class="pl-s1">path</span><span class="pl-kos">,</span> <span class="pl-s1">startX</span><span class="pl-kos">,</span> <span class="pl-s1">startY</span><span class="pl-kos">,</span> <span class="pl-s1">endX</span><span class="pl-kos">,</span> <span class="pl-s1">endY</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-svgdraw-js-LC10" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// get the path's stroke width (if one wanted to be  really precize, one could use half the stroke size)</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-svgdraw-js-LC11" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">stroke</span> <span class="pl-c1">=</span>  <span class="pl-en">parseFloat</span><span class="pl-kos">(</span><span class="pl-s1">path</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"stroke-width"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-svgdraw-js-LC12" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// check if the svg is big enough to draw the path, if not, set heigh/width</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-svgdraw-js-LC13" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"height"</span><span class="pl-kos">)</span> <span class="pl-c1">&lt;</span>  <span class="pl-s1">endY</span><span class="pl-kos">)</span>                 <span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"height"</span><span class="pl-kos">,</span> <span class="pl-s1">endY</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-svgdraw-js-LC14" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"width"</span> <span class="pl-kos">)</span> <span class="pl-c1">&lt;</span> <span class="pl-kos">(</span><span class="pl-s1">startX</span> <span class="pl-c1">+</span> <span class="pl-s1">stroke</span><span class="pl-kos">)</span> <span class="pl-kos">)</span>    <span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"width"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">startX</span> <span class="pl-c1">+</span> <span class="pl-s1">stroke</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-svgdraw-js-LC15" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"width"</span> <span class="pl-kos">)</span> <span class="pl-c1">&lt;</span> <span class="pl-kos">(</span><span class="pl-s1">endX</span>   <span class="pl-c1">+</span> <span class="pl-s1">stroke</span><span class="pl-kos">)</span> <span class="pl-kos">)</span>    <span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"width"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">endX</span>   <span class="pl-c1">+</span> <span class="pl-s1">stroke</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-svgdraw-js-LC16" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-svgdraw-js-LC17" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">deltaX</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">endX</span> <span class="pl-c1">-</span> <span class="pl-s1">startX</span><span class="pl-kos">)</span> * <span class="pl-c1">0.15</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-svgdraw-js-LC18" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">deltaY</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">endY</span> <span class="pl-c1">-</span> <span class="pl-s1">startY</span><span class="pl-kos">)</span> * <span class="pl-c1">0.15</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-svgdraw-js-LC19" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// for further calculations which ever is the shortest distance</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-svgdraw-js-LC20" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">delta</span>  <span class="pl-c1">=</span>  <span class="pl-s1">deltaY</span> <span class="pl-c1">&lt;</span> <span class="pl-en">absolute</span><span class="pl-kos">(</span><span class="pl-s1">deltaX</span><span class="pl-kos">)</span> ? <span class="pl-s1">deltaY</span> : <span class="pl-en">absolute</span><span class="pl-kos">(</span><span class="pl-s1">deltaX</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-svgdraw-js-LC21" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-svgdraw-js-LC22" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// set sweep-flag (counter/clock-wise)</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-svgdraw-js-LC23" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// if start element is closer to the left edge,</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-svgdraw-js-LC24" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// draw the first arc counter-clockwise, and the second one clock-wise</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-svgdraw-js-LC25" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">arc1</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span> <span class="pl-k">var</span> <span class="pl-s1">arc2</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-svgdraw-js-LC26" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">startX</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">endX</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-svgdraw-js-LC27" class="blob-code blob-code-inner js-file-line">        <span class="pl-s1">arc1</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-svgdraw-js-LC28" class="blob-code blob-code-inner js-file-line">        <span class="pl-s1">arc2</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-svgdraw-js-LC29" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">}</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-svgdraw-js-LC30" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// draw tha pipe-like path</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-svgdraw-js-LC31" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// 1. move a bit down, 2. arch,  3. move a bit to the right, 4.arch, 5. move down to the end </span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-svgdraw-js-LC32" class="blob-code blob-code-inner js-file-line">    <span class="pl-s1">path</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"d"</span><span class="pl-kos">,</span>  <span class="pl-s">"M"</span>  <span class="pl-c1">+</span> <span class="pl-s1">startX</span> <span class="pl-c1">+</span> <span class="pl-s">" "</span> <span class="pl-c1">+</span> <span class="pl-s1">startY</span> <span class="pl-c1">+</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-svgdraw-js-LC33" class="blob-code blob-code-inner js-file-line">                    <span class="pl-s">" V"</span> <span class="pl-c1">+</span> <span class="pl-kos">(</span><span class="pl-s1">startY</span> <span class="pl-c1">+</span> <span class="pl-s1">delta</span><span class="pl-kos">)</span> <span class="pl-c1">+</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-svgdraw-js-LC34" class="blob-code blob-code-inner js-file-line">                    <span class="pl-s">" A"</span> <span class="pl-c1">+</span> <span class="pl-s1">delta</span> <span class="pl-c1">+</span> <span class="pl-s">" "</span> <span class="pl-c1">+</span>  <span class="pl-s1">delta</span> <span class="pl-c1">+</span> <span class="pl-s">" 0 0 "</span> <span class="pl-c1">+</span> <span class="pl-s1">arc1</span> <span class="pl-c1">+</span> <span class="pl-s">" "</span> <span class="pl-c1">+</span> <span class="pl-kos">(</span><span class="pl-s1">startX</span> <span class="pl-c1">+</span> <span class="pl-s1">delta</span>*<span class="pl-en">signum</span><span class="pl-kos">(</span><span class="pl-s1">deltaX</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">" "</span> <span class="pl-c1">+</span> <span class="pl-kos">(</span><span class="pl-s1">startY</span> <span class="pl-c1">+</span> <span class="pl-c1">2</span>*<span class="pl-s1">delta</span><span class="pl-kos">)</span> <span class="pl-c1">+</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-svgdraw-js-LC35" class="blob-code blob-code-inner js-file-line">                    <span class="pl-s">" H"</span> <span class="pl-c1">+</span> <span class="pl-kos">(</span><span class="pl-s1">endX</span> <span class="pl-c1">-</span> <span class="pl-s1">delta</span>*<span class="pl-en">signum</span><span class="pl-kos">(</span><span class="pl-s1">deltaX</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> </td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-svgdraw-js-LC36" class="blob-code blob-code-inner js-file-line">                    <span class="pl-s">" A"</span> <span class="pl-c1">+</span> <span class="pl-s1">delta</span> <span class="pl-c1">+</span> <span class="pl-s">" "</span> <span class="pl-c1">+</span>  <span class="pl-s1">delta</span> <span class="pl-c1">+</span> <span class="pl-s">" 0 0 "</span> <span class="pl-c1">+</span> <span class="pl-s1">arc2</span> <span class="pl-c1">+</span> <span class="pl-s">" "</span> <span class="pl-c1">+</span> <span class="pl-s1">endX</span> <span class="pl-c1">+</span> <span class="pl-s">" "</span> <span class="pl-c1">+</span> <span class="pl-kos">(</span><span class="pl-s1">startY</span> <span class="pl-c1">+</span> <span class="pl-c1">3</span>*<span class="pl-s1">delta</span><span class="pl-kos">)</span> <span class="pl-c1">+</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-svgdraw-js-LC37" class="blob-code blob-code-inner js-file-line">                    <span class="pl-s">" V"</span> <span class="pl-c1">+</span> <span class="pl-s1">endY</span> <span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-svgdraw-js-LC38" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">}</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-svgdraw-js-LC39" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-svgdraw-js-LC40" class="blob-code blob-code-inner js-file-line"><span class="pl-k">function</span> <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-s1">svg</span><span class="pl-kos">,</span> <span class="pl-s1">path</span><span class="pl-kos">,</span> <span class="pl-s1">startElem</span><span class="pl-kos">,</span> <span class="pl-s1">endElem</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-svgdraw-js-LC41" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">svgContainer</span><span class="pl-c1">=</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svgContainer"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-svgdraw-js-LC42" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-svgdraw-js-LC43" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// if first element is lower than the second, swap!</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-svgdraw-js-LC44" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span><span class="pl-kos">(</span><span class="pl-s1">startElem</span><span class="pl-kos">.</span><span class="pl-en">offset</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">top</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">endElem</span><span class="pl-kos">.</span><span class="pl-en">offset</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">top</span><span class="pl-kos">)</span><span class="pl-kos">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-svgdraw-js-LC45" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">var</span> <span class="pl-s1">temp</span> <span class="pl-c1">=</span> <span class="pl-s1">startElem</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-svgdraw-js-LC46" class="blob-code blob-code-inner js-file-line">        <span class="pl-s1">startElem</span> <span class="pl-c1">=</span> <span class="pl-s1">endElem</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-svgdraw-js-LC47" class="blob-code blob-code-inner js-file-line">        <span class="pl-s1">endElem</span> <span class="pl-c1">=</span> <span class="pl-s1">temp</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-svgdraw-js-LC48" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">}</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-svgdraw-js-LC49" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-svgdraw-js-LC50" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// get (top, left) corner coordinates of the svg container   </span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-svgdraw-js-LC51" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">svgTop</span>  <span class="pl-c1">=</span> <span class="pl-s1">svgContainer</span><span class="pl-kos">.</span><span class="pl-en">offset</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">top</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="file-svgdraw-js-LC52" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">svgLeft</span> <span class="pl-c1">=</span> <span class="pl-s1">svgContainer</span><span class="pl-kos">.</span><span class="pl-en">offset</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">left</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="file-svgdraw-js-LC53" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="file-svgdraw-js-LC54" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// get (top, left) coordinates for the two elements</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="file-svgdraw-js-LC55" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">startCoord</span> <span class="pl-c1">=</span> <span class="pl-s1">startElem</span><span class="pl-kos">.</span><span class="pl-en">offset</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="file-svgdraw-js-LC56" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">endCoord</span>   <span class="pl-c1">=</span> <span class="pl-s1">endElem</span><span class="pl-kos">.</span><span class="pl-en">offset</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="file-svgdraw-js-LC57" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="file-svgdraw-js-LC58" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// calculate path's start (x,y)  coords</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="file-svgdraw-js-LC59" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// we want the x coordinate to visually result in the element's mid point</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="file-svgdraw-js-LC60" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">startX</span> <span class="pl-c1">=</span> <span class="pl-s1">startCoord</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">+</span> <span class="pl-c1">0.5</span>*<span class="pl-s1">startElem</span><span class="pl-kos">.</span><span class="pl-en">outerWidth</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">-</span> <span class="pl-s1">svgLeft</span><span class="pl-kos">;</span>    <span class="pl-c">// x = left offset + 0.5*width - svg's left offset</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="file-svgdraw-js-LC61" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">startY</span> <span class="pl-c1">=</span> <span class="pl-s1">startCoord</span><span class="pl-kos">.</span><span class="pl-c1">top</span>  <span class="pl-c1">+</span> <span class="pl-s1">startElem</span><span class="pl-kos">.</span><span class="pl-en">outerHeight</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">-</span> <span class="pl-s1">svgTop</span><span class="pl-kos">;</span>        <span class="pl-c">// y = top offset + height - svg's top offset</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="file-svgdraw-js-LC62" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td id="file-svgdraw-js-LC63" class="blob-code blob-code-inner js-file-line">        <span class="pl-c">// calculate path's end (x,y) coords</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td id="file-svgdraw-js-LC64" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">endX</span> <span class="pl-c1">=</span> <span class="pl-s1">endCoord</span><span class="pl-kos">.</span><span class="pl-c1">left</span> <span class="pl-c1">+</span> <span class="pl-c1">0.5</span>*<span class="pl-s1">endElem</span><span class="pl-kos">.</span><span class="pl-en">outerWidth</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">-</span> <span class="pl-s1">svgLeft</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td id="file-svgdraw-js-LC65" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> <span class="pl-s1">endY</span> <span class="pl-c1">=</span> <span class="pl-s1">endCoord</span><span class="pl-kos">.</span><span class="pl-c1">top</span>  <span class="pl-c1">-</span> <span class="pl-s1">svgTop</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td id="file-svgdraw-js-LC66" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td id="file-svgdraw-js-LC67" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// call function for drawing the path</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td id="file-svgdraw-js-LC68" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">drawPath</span><span class="pl-kos">(</span><span class="pl-s1">svg</span><span class="pl-kos">,</span> <span class="pl-s1">path</span><span class="pl-kos">,</span> <span class="pl-s1">startX</span><span class="pl-kos">,</span> <span class="pl-s1">startY</span><span class="pl-kos">,</span> <span class="pl-s1">endX</span><span class="pl-kos">,</span> <span class="pl-s1">endY</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td id="file-svgdraw-js-LC69" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td id="file-svgdraw-js-LC70" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">}</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td id="file-svgdraw-js-LC71" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L72" class="blob-num js-line-number" data-line-number="72"></td>
+        <td id="file-svgdraw-js-LC72" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L73" class="blob-num js-line-number" data-line-number="73"></td>
+        <td id="file-svgdraw-js-LC73" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L74" class="blob-num js-line-number" data-line-number="74"></td>
+        <td id="file-svgdraw-js-LC74" class="blob-code blob-code-inner js-file-line"><span class="pl-k">function</span> <span class="pl-en">connectAll</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L75" class="blob-num js-line-number" data-line-number="75"></td>
+        <td id="file-svgdraw-js-LC75" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// connect all the paths you want!</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L76" class="blob-num js-line-number" data-line-number="76"></td>
+        <td id="file-svgdraw-js-LC76" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#path1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#teal"</span><span class="pl-kos">)</span><span class="pl-kos">,</span>   <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#orange"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L77" class="blob-num js-line-number" data-line-number="77"></td>
+        <td id="file-svgdraw-js-LC77" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#path2"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#red"</span><span class="pl-kos">)</span><span class="pl-kos">,</span>    <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#orange"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L78" class="blob-num js-line-number" data-line-number="78"></td>
+        <td id="file-svgdraw-js-LC78" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#path3"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#teal"</span><span class="pl-kos">)</span><span class="pl-kos">,</span>   <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#aqua"</span><span class="pl-kos">)</span>  <span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L79" class="blob-num js-line-number" data-line-number="79"></td>
+        <td id="file-svgdraw-js-LC79" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#path4"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#red"</span><span class="pl-kos">)</span><span class="pl-kos">,</span>    <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#aqua"</span><span class="pl-kos">)</span>  <span class="pl-kos">)</span><span class="pl-kos">;</span> </td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L80" class="blob-num js-line-number" data-line-number="80"></td>
+        <td id="file-svgdraw-js-LC80" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#path5"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#purple"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#teal"</span><span class="pl-kos">)</span>  <span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L81" class="blob-num js-line-number" data-line-number="81"></td>
+        <td id="file-svgdraw-js-LC81" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">connectElements</span><span class="pl-kos">(</span><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#path6"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#orange"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#green"</span><span class="pl-kos">)</span> <span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L82" class="blob-num js-line-number" data-line-number="82"></td>
+        <td id="file-svgdraw-js-LC82" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L83" class="blob-num js-line-number" data-line-number="83"></td>
+        <td id="file-svgdraw-js-LC83" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">}</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L84" class="blob-num js-line-number" data-line-number="84"></td>
+        <td id="file-svgdraw-js-LC84" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L85" class="blob-num js-line-number" data-line-number="85"></td>
+        <td id="file-svgdraw-js-LC85" class="blob-code blob-code-inner js-file-line"><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-smi">document</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">ready</span><span class="pl-kos">(</span><span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L86" class="blob-num js-line-number" data-line-number="86"></td>
+        <td id="file-svgdraw-js-LC86" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// reset svg each time </span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L87" class="blob-num js-line-number" data-line-number="87"></td>
+        <td id="file-svgdraw-js-LC87" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"height"</span><span class="pl-kos">,</span> <span class="pl-s">"0"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L88" class="blob-num js-line-number" data-line-number="88"></td>
+        <td id="file-svgdraw-js-LC88" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"width"</span><span class="pl-kos">,</span> <span class="pl-s">"0"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L89" class="blob-num js-line-number" data-line-number="89"></td>
+        <td id="file-svgdraw-js-LC89" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">connectAll</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L90" class="blob-num js-line-number" data-line-number="90"></td>
+        <td id="file-svgdraw-js-LC90" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L91" class="blob-num js-line-number" data-line-number="91"></td>
+        <td id="file-svgdraw-js-LC91" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L92" class="blob-num js-line-number" data-line-number="92"></td>
+        <td id="file-svgdraw-js-LC92" class="blob-code blob-code-inner js-file-line"><span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-smi">window</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">resize</span><span class="pl-kos">(</span><span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L93" class="blob-num js-line-number" data-line-number="93"></td>
+        <td id="file-svgdraw-js-LC93" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">// reset svg each time </span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L94" class="blob-num js-line-number" data-line-number="94"></td>
+        <td id="file-svgdraw-js-LC94" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"height"</span><span class="pl-kos">,</span> <span class="pl-s">"0"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L95" class="blob-num js-line-number" data-line-number="95"></td>
+        <td id="file-svgdraw-js-LC95" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">$</span><span class="pl-kos">(</span><span class="pl-s">"#svg1"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">attr</span><span class="pl-kos">(</span><span class="pl-s">"width"</span><span class="pl-kos">,</span> <span class="pl-s">"0"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L96" class="blob-num js-line-number" data-line-number="96"></td>
+        <td id="file-svgdraw-js-LC96" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">connectAll</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+      <tr>
+        <td id="file-svgdraw-js-L97" class="blob-num js-line-number" data-line-number="97"></td>
+        <td id="file-svgdraw-js-LC97" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+
+    <a name="comments"></a>
+    <div class="js-quote-selection-container" data-quote-markdown=".js-comment-body">
+      <div class="js-discussion js-socket-channel" data-channel="marked-as-read:gist:11127839">
+        <div class="ml-6 pl-3">
+          
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/andreguilhon/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/andreguilhon"><img class="avatar rounded-1" alt="@andreguilhon" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/4137253.png" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-1409183">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="89689786869a02f70afcfda438825c3c">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="89689786869a02f70afcfda438825c3c" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="1BuJSjN+avJZc0Rep94MMBV2MW45PqK8+v2AoW8OeCBnrSHEnxz67PKYj3l/zLMMIkHfo6PDz2Awa8QNkM135w==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-1409183-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/andreguilhon/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/andreguilhon">andreguilhon</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-1409183" id="gistcomment-1409183-permalink" class="link-gray js-timestamp"><relative-time datetime="2015-03-09T19:48:57Z" class="no-wrap" title="Mar 9, 2015, 10:48 PM GMT+3">on Mar 9, 2015</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Woks great almost everytime. I found what I think it may be
+ a tiny bug: When I use a script to reload a page in a few seconds 
+(setTimeout(function(){<br>
+window.location.reload(1);<br>
+}, 15000);), when the page is reloaded there is no line drawn. If I hit 
+F5 manually, it works great. Do you have any clue of what it can be? Any
+ help would e apreciated!</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/joshharington/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/joshharington"><img class="avatar rounded-1" alt="@joshharington" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/10532582.jpg" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-1429724">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="0506b99e8eb8e3ae259ae4474647eebc">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="0506b99e8eb8e3ae259ae4474647eebc" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="W9lQN+v2VjK9CbUAqJA0y5cIcQGB1E1sccMG72Ccorrob/i5R5TGLBbifidwgov3oD+fzBspILC7VUJDn1+tfQ==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-1429724-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/joshharington/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/joshharington">joshharington</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-1429724" id="gistcomment-1429724-permalink" class="link-gray js-timestamp"><relative-time datetime="2015-04-09T00:41:29Z" class="no-wrap" title="Apr 9, 2015, 3:41 AM GMT+3">on Apr 9, 2015</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Is there a way to animate this?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/Tommy255/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/Tommy255"><img class="avatar rounded-1" alt="@Tommy255" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/14077115.png" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-1564399">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="3e95a98d8b067e4f599cca615fd20f85">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="3e95a98d8b067e4f599cca615fd20f85" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="G/lmgXlzaKjL2ZJ6G0pNDfjN+dmgjFb8OR7hk/0EPmKoT84P1RH4tmAyWV3DWPIxz/oXFDpxOyDziKU/AscxpQ==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-1564399-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/Tommy255/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/Tommy255">Tommy255</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-1564399" id="gistcomment-1564399-permalink" class="link-gray js-timestamp"><relative-time datetime="2015-09-01T15:58:23Z" class="no-wrap" title="Sep 1, 2015, 6:58 PM GMT+3">on Sep 1, 2015</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Hi,</p>
+<p>nice library, Is there a way to make it draw the lines horizontally?</p>
+<p>Thank you</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/avtarsinghpunia/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/avtarsinghpunia"><img class="avatar rounded-1" alt="@avtarsinghpunia" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/4585897.png" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-1616262">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="a9d2cce04b0108f223673798175fde56">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="a9d2cce04b0108f223673798175fde56" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="4uJyXEzlc/tZEuo5wwNPuKQn2foTQZNf+5m8FlEahl9RVNrS4Ifj5fL5IR4bEfCEkxA3N4m8/oMxD/i6rtmJmA==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-1616262-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/avtarsinghpunia/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/avtarsinghpunia">avtarsinghpunia</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-1616262" id="gistcomment-1616262-permalink" class="link-gray js-timestamp"><relative-time datetime="2015-11-09T07:46:55Z" class="no-wrap" title="Nov 9, 2015, 10:46 AM GMT+3">on Nov 9, 2015</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Hi,</p>
+<p>I want to draw double side arrows between two div elements?<br>
+Can you please suggest something?</p>
+<p>Regards,<br>
+Avtar Singh</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/Azhar157/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/Azhar157"><img class="avatar rounded-1" alt="@Azhar157" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/15377259.jpg" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-1697596">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="5fa5a9b76702221a028330bcbcbf1c85">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="5fa5a9b76702221a028330bcbcbf1c85" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="bZ5rCUZliayNTI/w4vYFGBbQrhu2FCnfm9bkD7ygth3eKMOH6gcZsianRNc65LokIedA1izpRANRQKCjQ2O52g==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-1697596-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/Azhar157/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/Azhar157">Azhar157</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-1697596" id="gistcomment-1697596-permalink" class="link-gray js-timestamp"><relative-time datetime="2016-02-15T11:54:14Z" class="no-wrap" title="Feb 15, 2016, 2:54 PM GMT+3">on Feb 15, 2016</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Hello Avtar Singh,</p>
+<p>Did you get the required output? Even I want to add arrows in place of a line, could someone help?</p>
+<p>Regards,<br>
+Azhar</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/joeybab3/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/joeybab3"><img class="avatar rounded-1" alt="@joeybab3" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/2829457.jpg" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-1822592">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="29735460180f71b45bb24d9a9f030f34">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="29735460180f71b45bb24d9a9f030f34" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="Y7PNMn1nrqwn2W5M9V29YBK3S+RJuIUn1X57FivmopPQBWW80QU+sowypWstTwJcJYClKdNF6Psf6D+61CWtVA==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-1822592-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/joeybab3/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/joeybab3">joeybab3</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-1822592" id="gistcomment-1822592-permalink" class="link-gray js-timestamp"><relative-time datetime="2016-07-10T23:16:11Z" class="no-wrap" title="Jul 11, 2016, 2:16 AM GMT+3">on Jul 11, 2016</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>This is cool! The only thing I see that's wrong is that it 
+can't draw the lines horizontally, so it looks weird if you try and put 
+elements side by side, has anyone found a fix for this?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/mdalmazzi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/mdalmazzi"><img class="avatar rounded-1" alt="@mdalmazzi" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/22166759.jpg" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-1934556">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="1a11ae28d65709d21d855c8b21e76447">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="1a11ae28d65709d21d855c8b21e76447" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="cl47E44pWjohBJbOU/rtEvY5+pT64lbAOfYVn70d8BnB6JOdIkvKJIrvXemL6FIuwQ4UWWAfOxzzYFEzQt7/3g==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-1934556-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/mdalmazzi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/mdalmazzi">mdalmazzi</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-1934556" id="gistcomment-1934556-permalink" class="link-gray js-timestamp"><relative-time datetime="2016-11-30T17:02:56Z" class="no-wrap" title="Nov 30, 2016, 8:02 PM GMT+3">on Nov 30, 2016</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Great, I also would like draw the lines horizontally, Any suggestions?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/sridivyaposa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/sridivyaposa"><img class="avatar rounded-1" alt="@sridivyaposa" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/15912173.jpg" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-1952551">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="d22e1cba6c5b594116034c2c42c19c6a">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="d22e1cba6c5b594116034c2c42c19c6a" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="vlBRCG9IOC+JkoPkqaX+C31JaUk+/I6gi7/pmulRo2kN5vmGwyqoMSJ5SMNxt0E3Sn6HhKQB43xBKa02FpKsrg==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-1952551-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/sridivyaposa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/sridivyaposa">sridivyaposa</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-1952551" id="gistcomment-1952551-permalink" class="link-gray js-timestamp"><relative-time datetime="2016-12-20T05:59:25Z" class="no-wrap" title="Dec 20, 2016, 8:59 AM GMT+3">on Dec 20, 2016</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>If you have two elements side by side, you can use <strong>SVG line</strong> instead of <strong>SVG path</strong>. i.e, you can add condition like when startY and endY are equal, you can draw a line instead of drawing a path.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/Manoj-Roy/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/Manoj-Roy"><img class="avatar rounded-1" alt="@Manoj-Roy" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/15997561.jpg" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-2018766">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="3426d85dc503469ef221d82ff2f1b0c8">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="3426d85dc503469ef221d82ff2f1b0c8" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="qJLwJIIvrrTWEEaDWcHbFZS6xwlVirMTa+UqPafrvUYbJFiqLk0+qn37jaSB02Qpo40pxM933s+hc26RWCiygQ==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-2018766-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/Manoj-Roy/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/Manoj-Roy">Manoj-Roy</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-2018766" id="gistcomment-2018766-permalink" class="link-gray js-timestamp"><relative-time datetime="2017-03-06T06:19:36Z" class="no-wrap" title="Mar 6, 2017, 9:19 AM GMT+3">on Mar 6, 2017</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>This is awesome plugin. I have use this on my project but here I got a problem. Can I draw line after click on two elements ?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/Manoj-Roy/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/Manoj-Roy"><img class="avatar rounded-1" alt="@Manoj-Roy" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/15997561.jpg" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-2019985">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="db5932b76dbdde0243d4bf1c6e1d0370">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="db5932b76dbdde0243d4bf1c6e1d0370" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="Js3y3KjSTRDNmhEHWzHKCHf0zpkK/k1tljokQwkfTgyVe1pSBLDdDmZx2iCDI3U0QMMgVJADILFcrGDv9txByw==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-2019985-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/Manoj-Roy/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/Manoj-Roy">Manoj-Roy</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-2019985" id="gistcomment-2019985-permalink" class="link-gray js-timestamp"><relative-time datetime="2017-03-07T10:20:51Z" class="no-wrap" title="Mar 7, 2017, 1:20 PM GMT+3">on Mar 7, 2017</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+        
+  <span class="d-inline-block text-gray-light">•</span>
+
+  <details class="details-overlay details-reset d-inline-block dropdown hx_dropdown-fullscreen">
+    <summary class="btn-link no-underline text-gray js-notice" aria-haspopup="menu" role="button">
+      <div class="position-relative">
+        <span>
+            edited
+        </span>
+        <svg height="11" class="octicon octicon-triangle-down v-align-middle" viewBox="0 0 12 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"></path></svg>
+      </div>
+    </summary>
+    <details-menu class="dropdown-menu dropdown-menu-s width-auto py-0 js-comment-edit-history-menu" style="max-width: 352px; z-index: 99;" src="/_render_node/MDExOkdpc3RDb21tZW50MTExMjc4Mzk6MjAxOTk4NQ==/comments/comment_edit_history_log" preload="" role="menu">
+      <include-fragment class="octocat-spinner my-3" style="min-width: 100px;" aria-label="Loading"></include-fragment>
+    </details-menu>
+  </details>
+
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>How can I create line after click on two div ?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/nghuuphuoc/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/nghuuphuoc"><img class="avatar rounded-1" alt="@nghuuphuoc" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/4226036.jpg" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-2022207">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="1528f32a7ae5c637e5e990254c11f4a8">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="1528f32a7ae5c637e5e990254c11f4a8" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="MEUVdd7tBWSgjqhO0Z5Cojj4IDMI+5q7CeJ3v+ethnmD8737co+VegtlY2kJjP2eD8/O/pIG92fDdDMTGG6Jvg==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-2022207-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/nghuuphuoc/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/nghuuphuoc">nghuuphuoc</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-2022207" id="gistcomment-2022207-permalink" class="link-gray js-timestamp"><relative-time datetime="2017-03-09T07:47:19Z" class="no-wrap" title="Mar 9, 2017, 10:47 AM GMT+3">on Mar 9, 2017</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>I moved those scripts to this fiddle <a href="https://jsfiddle.net/bbcfk164/" rel="nofollow">https://jsfiddle.net/bbcfk164/</a>. So other one can have quick preview and give some modifications if needed :)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar ">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/kriit24/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/kriit24"><img class="avatar rounded-1" alt="@kriit24" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/1489085.png" width="40" height="40"></a>
+
+</div>
+
+
+    
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-2030775">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white" data-body-version="2cfe5600e6fefd9aa7760c3f7a8717c9">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="98788e0326080d62c7119ba0461a2863070500de21e5a54aa8a8706e698fa94a" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret " data-body-version="2cfe5600e6fefd9aa7760c3f7a8717c9" data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="4LL4MPNEdgQ34GqCCnfvKkFljCpn/6BlrXYd2hAfR55TBFC+XybmGpwLoaXSZVAWdlJi5/0Czbln4Fl279xIWQ==">
+
+    
+<div class="timeline-comment-header clearfix ">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray" aria-haspopup="menu" role="button">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px" role="menu">
+        <clipboard-copy class="dropdown-item btn-link" for="gistcomment-2030775-permalink" role="menuitem" tabindex="0">
+    Copy link
+  </clipboard-copy>
+
+        <button type="button" class="dropdown-item btn-link d-none js-comment-quote-reply" role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  
+
+    
+
+
+  
+
+  
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/kriit24/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/kriit24">kriit24</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-2030775" id="gistcomment-2030775-permalink" class="link-gray js-timestamp"><relative-time datetime="2017-03-18T07:23:34Z" class="no-wrap" title="Mar 18, 2017, 10:23 AM GMT+3">on Mar 18, 2017</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled="" sortable="">
+<table class="d-block" data-paste-markdown-skip="">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Not working if styleing div elements.<br>
+display:inline-block<br>
+position:relative<br>
+margin<br>
+padding</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+<!-- Rendered timeline since 2020-02-25 22:47:38 -->
+<div id="partial-timeline-marker" class="js-timeline-marker js-updatable-content" data-last-modified="Wed, 26 Feb 2020 06:47:38 GMT">
+</div>
+
+        </div>
+
+        <div class="discussion-timeline-actions">
+            
+<div class="flash flash-warn mt-3">
+    <a rel="nofollow" class="btn btn-primary" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;signed out comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="4f61d1bf48cb6851f1ef8debef09b56aa324614baefd5cfd85ea30f90696c598" href="https://gist.github.com/join?source=comment-gist">Sign up for free</a>
+    <strong>to join this conversation on GitHub</strong>.
+    Already have an account?
+    <a rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;signed out comment&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://gist.github.com/alojzije/11127839&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="544566a74e94eed44c1cb89c30a0f67009452c1f633c5761176f3788eb54ba0e" href="https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Falojzije%2F11127839">Sign in to comment</a>
+</div>
+
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+</div><!-- /.container -->
+
+    </main>
+  </div>
+
+  </div>
+
+        
+<div class="footer container-lg width-full px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">© 2020 GitHub, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com/">Help</a></li>
+
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://github.blog/" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" async="async" integrity="sha512-o4vS4IKrjdy/HD+xr2+VhO6DxQmj5jikhHbEGrd8+JGhpmIOxRrpT1Qo5k3IhKimm8VXIu3pyYejLtOAkm+OsQ==" type="application/javascript" id="js-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-a38bd2e0.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-2GtXiukHeT1/Kt5UHrVa2iMiBF1fCLQILWG0UKazKtQXjLZpcurZ6AXlkiTZFUeEtVWjoV8LvyppgPp9rkQMUA==" type="application/javascript" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/environment-bootstrap-d86b578a.js"></script>
+    
+    
+    
+    
+    
+      <script crossorigin="anonymous" async="async" integrity="sha512-DwXDqwWY+7hnjGhRinKe4COOMybXH3iVmSVbsszVzH3OseMK+YMGN9WiSP2+1nngDTUD8ZS6rDSr/bhFY1Dgqg==" type="application/javascript" src="Connect%20two%20elements%20_%20draw%20a%20path%20between%20two%20elements%20with%20SVG%20path%20(using%20jQuery)%20%C2%B7%20GitHub_files/gist-bootstrap-0f05c3ab.js"></script>
+
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden="">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <span class="js-stale-session-flash-signed-in" hidden="">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden="">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open="">
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog="">
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  
+
+
+</body></html>

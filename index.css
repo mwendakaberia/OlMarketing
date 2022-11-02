@@ -1,0 +1,137 @@
+body{
+	background: url(photos/images19.jpg)center/cover no-repeat fixed;
+	/*background-size: 50vw 50vh;*/
+}
+
+nav{
+    min-height: 40px;
+	display: flex;
+	background-color: aliceblue;
+	/*text-align: center;*/
+	justify-content: space-around;
+    border-radius: 15px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+h1{
+    color: cyan;
+    font-size: 24px;
+}
+.posting{
+    color: red;
+    text-decoration: none;
+}
+#first a{
+	text-decoration: none;
+	text-shadow: 5px 5px 5px cyan;
+	font-size: 24px;
+}
+
+h2{
+    font-size: 18px;
+}
+select{
+    border: cyan solid 2px;
+    border-radius: 5px;
+
+}
+.selector{
+    float: right;
+    color: floralwhite;
+    height: 150px;
+    background: linear-gradient(120deg,purple,midnightblue,cyan,floralwhite);
+    /*opacity: 0.3;*/
+}
+.images1{
+    display: inline-block;
+    margin: 10px;
+}
+.selector2{
+    color: floralwhite;
+}
+.select{
+    border: cyan solid 2px;
+    border-radius: 5px;
+}
+div.all{
+    display: inline-block;
+    margin: 8px;
+    border: 3px solid cyan;
+    border-radius: 15px;
+    background-color: floralwhite;
+
+    
+
+}
+
+.image img{
+    width: 300px;
+    height: 300px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+.image img:hover{
+    box-shadow: 1px 1px 1px 1px red,1px 1px 1px 1px red;
+     /*background: linear-gradient(45deg,purple,midnightblue,floralwhite,red);*/
+
+}
+.name{
+    text-align: center;
+    font-size: 20px;
+    font-family: century;
+}
+form{
+    background-color: cyan;
+    width:600px;
+    margin: auto;
+
+}
+input{
+    margin: 5px;
+    /*border: 1px solid red;*/
+    border-radius: 10px;
+    height: 30px;
+
+}
+textarea{
+    margin: 5px;
+    /*border: 1px solid red;*/
+    border-radius: 10px
+}
+input:hover{
+    border-color: floralwhite;
+    color:cyan;
+    background: linear-gradient(45deg,purple,midnightblue,floralwhite,red);
+}
+textarea:hover{
+    border-color: floralwhite;
+    color:cyan;
+    background: linear-gradient(45deg,purple,midnightblue,floralwhite,red);
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    border:1px solid red;
+    border-radius: 10px;
+    color:floralwhite;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 745px){
+    .image img{
+    width: 100px;
+    height: 100px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+.name{
+    text-align: center;
+    font-size: 10px;
+    font-family: century;
+}
